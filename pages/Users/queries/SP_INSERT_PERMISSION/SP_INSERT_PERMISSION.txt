@@ -1,0 +1,5 @@
+EXECUTE [dbo].[INSERT_PERMISSION] 
+   @PERMISSION_ID = {{Table_Permissions.newRow==undefined?"": Table_Permissions.newRow.PERMISSION_ID}}
+  ,@PERMISSION_NAME = {{Table_Permissions.newRow==undefined?"":Table_Permissions.newRow.PERMISSION_NAME}}
+  ,@DEFINITION = {{Table_Permissions.newRow==undefined?"":Table_Permissions.newRow.DEFINITION}}
+  ,@USER_ID = {{appsmith.user.email}}

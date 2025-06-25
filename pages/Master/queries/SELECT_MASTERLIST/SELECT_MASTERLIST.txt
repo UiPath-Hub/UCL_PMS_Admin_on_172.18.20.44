@@ -1,0 +1,39 @@
+--SELECT TYPE_NAME,MAX(CAST(ACTIVE AS INT)) AS ACTIVE FROM dbo.PMS_MASTER_LIST GROUP BY TYPE_NAME
+
+WITH UniqueTypes AS (
+    SELECT TYPE_NAME, MAX(CAST(ACTIVE AS INT)) AS ACTIVE
+    FROM dbo.PMS_MASTER_LIST
+    GROUP BY TYPE_NAME
+)
+SELECT p.*
+FROM dbo.PMS_MASTER_LIST p
+RIGHT JOIN UniqueTypes as u
+ON p.TYPE_NAME = u.TYPE_NAME
+WHERE
+    -- Case when ACTIVE = 1, select by MIN(SYSTEM_INDEX)
+    (
+        u.ACTIVE = 1
+        AND p.SYSTEM_INDEX = 
+						(SELECT MIN(SYSTEM_INDEX)
+            FROM dbo.PMS_MASTER_LIST
+            WHERE TYPE_NAME = p.TYPE_NAME AND PMS_MASTER_LIST.ACTIVE = 1)
+			AND p.ACTIVE = 1
+    )
+    -- Case when ACTIVE = 0, select by MAX(VERSION) and MIN(SYSTEM_INDEX)
+    OR (
+				p.ACTIVE = 0
+			  AND
+        (u.ACTIVE = 0
+        AND p.VERSION = (
+            SELECT TOP(1) VERSION
+            FROM dbo.PMS_MASTER_LIST
+            WHERE TYPE_NAME = p.TYPE_NAME
+            AND PMS_MASTER_LIST.ACTIVE = 0 ORDER BY CREATE_DATE DESC)
+        AND p.SYSTEM_INDEX = (
+            SELECT MIN(SYSTEM_INDEX)
+            FROM dbo.PMS_MASTER_LIST
+            WHERE TYPE_NAME = p.TYPE_NAME
+            AND VERSION = p.VERSION
+            AND ACTIVE = 0)
+				)
+		);

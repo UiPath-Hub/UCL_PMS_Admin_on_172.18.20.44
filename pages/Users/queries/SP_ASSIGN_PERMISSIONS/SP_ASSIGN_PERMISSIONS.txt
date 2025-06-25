@@ -1,0 +1,6 @@
+EXECUTE[dbo].[ASSIGN_PERMISSIONS] 
+   @PERMISSION_ID_StringArray = {{JSON.stringify(MSelect_Permissions.selectedOptionValues)}}
+  ,@PAIRED_ROLE_ID= {{Table_Roles.triggeredRow.ID}}
+  ,@USER_ID = {{appsmith.user.email}}
+
+

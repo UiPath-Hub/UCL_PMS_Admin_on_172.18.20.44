@@ -1,0 +1,3 @@
+EXECUTE [dbo].[INSERT_ROLE] 
+   @ROLE_NAME= {{Table_Roles.newRow==undefined?null:Table_Roles.newRow.ROLE_NAME}}
+  ,@USER_ID = {{appsmith.user.email}}

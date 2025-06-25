@@ -1,0 +1,9 @@
+{
+  "find": "user",
+  "filter": {
+  deleted: false, 
+  _id: ObjectId("673c0dc7b839c15f34ad2772") 
+},
+  "limit": 10,
+  "batchSize": 10
+}

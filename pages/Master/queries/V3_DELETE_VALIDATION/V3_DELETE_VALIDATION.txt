@@ -1,0 +1,2 @@
+DELETE FROM dbo.PMS_FIELDS_VALIDATION WHERE VALIDATION_ID IN 
+({{Table_PMS_FIELDS_VALIDATION.selectedRows.map((ele) => `'${ele.VALIDATION_ID}'`).join(',')}})

@@ -1,0 +1,44 @@
+{
+  "gitSyncId": "673abac8b839c15f34ad2652_e7a0af2e-a081-4a2a-9c44-3374dad4e238",
+  "id": "Users_Default_Account",
+  "unpublishedCollection": {
+    "name": "Default_Account",
+    "pageId": "Users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "ID",
+        "value": "{\n  data: \"\",\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "ACCOUNT_ID",
+        "value": "{\n  data: \"\",\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "EMAIL",
+        "value": "{\n  data: \"\",\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "PMS_OBJECT_ID",
+        "value": "{\n  data: \"\",\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "MAXIMUM_SESSIONS",
+        "value": "{\n  data: 1,\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "KICK_OLDEST_SESSION_OUT",
+        "value": "{\n  data: true,\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "SESSION_TIMEOUT_HOUR",
+        "value": "{\n  data: 1,\n  regex: \"\",\n  required: false\n}"
+      },
+      {
+        "name": "ROLES_AND_GROUPS",
+        "value": "[]"
+      }
+    ]
+  }
+}

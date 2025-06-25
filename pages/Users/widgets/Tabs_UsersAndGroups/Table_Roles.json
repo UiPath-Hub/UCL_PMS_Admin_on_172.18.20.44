@@ -1,0 +1,503 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": true,
+  "animateLoading": true,
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 58,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "canFreezeColumn": true,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "ROLE_NAME",
+    "CREATE_DATE",
+    "UPDATE_DATE",
+    "USER_ID",
+    "ID",
+    "ROLE_ID",
+    "TOTAL_ROWS",
+    "EditActions1",
+    "customColumn2"
+  ],
+  "columnUpdatedAt": 1732608994473,
+  "columnWidthMap": {
+    "CREATE_DATE": 216,
+    "EditActions1": 163,
+    "USER_ID": 219,
+    "customColumn1": 123
+  },
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": 0,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.ID.computedValue"
+    },
+    {
+      "key": "primaryColumns.ROLE_ID.computedValue"
+    },
+    {
+      "key": "primaryColumns.ROLE_NAME.computedValue"
+    },
+    {
+      "key": "primaryColumns.CREATE_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.UPDATE_DATE.computedValue"
+    },
+    {
+      "key": "primaryColumns.USER_ID.computedValue"
+    },
+    {
+      "key": "primaryColumns.TOTAL_ROWS.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveButtonColor"
+    },
+    {
+      "key": "primaryColumns.EditActions1.saveBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.discardBorderRadius"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isSaveDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.EditActions1.isCellVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onAddNewRowSave"
+    },
+    {
+      "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "primaryColumns.customColumn2.menuItems.menuItemhf0oep2s64.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn2.menuItems.menuItem82d12g3x6i.onClick"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "flexVerticalAlignment": "start",
+  "horizontalAlignment": "RIGHT",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": true,
+  "isVisible": true,
+  "isVisibleDownload": false,
+  "isVisibleFilters": false,
+  "isVisiblePagination": true,
+  "isVisibleSearch": true,
+  "key": "n71pl3g5rj",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onAddNewRowSave": "{{JS_Roles.onNewRole();}}",
+  "parentColumnSpace": 19.5,
+  "parentId": "d4tcrkfnli",
+  "parentRowSpace": 10,
+  "primaryColumnId": "ID",
+  "primaryColumns": {
+    "CREATE_DATE": {
+      "alias": "CREATE_DATE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( moment( currentRow[\"CREATE_DATE\"]).format())) :  moment( currentRow[\"CREATE_DATE\"]).format() })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "CREATE_DATE",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Create date",
+      "notation": "standard",
+      "originalId": "CREATE_DATE",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "EditActions1": {
+      "alias": "EditActions1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "editActions",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "discardActionLabel": "Discard",
+      "discardBorderRadius": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "discardButtonColor": "#F22B2B",
+      "discardButtonVariant": "TERTIARY",
+      "discardIconAlign": "left",
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "EditActions1",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => (  Table_Roles.updatedRowIndices.includes(currentIndex)))}}",
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardDisabled": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => ( !Table_Roles.updatedRowIndices.includes(currentIndex)))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveDisabled": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => ( !Table_Roles.updatedRowIndices.includes(currentIndex)))}}",
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Update",
+      "notation": "standard",
+      "onSave": "{{JS_Roles.onUpdateRole();}}",
+      "originalId": "EditActions1",
+      "saveActionLabel": "Save",
+      "saveBorderRadius": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "saveButtonColor": "{{Table_Roles.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "saveIconAlign": "left",
+      "sticky": "right",
+      "thousandSeparator": true,
+      "validation": {},
+      "width": 150
+    },
+    "ID": {
+      "alias": "ID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"ID\"])) :  currentRow[\"ID\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "ID",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "ID",
+      "notation": "standard",
+      "originalId": "ID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ROLE_ID": {
+      "alias": "ROLE_ID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"ROLE_ID\"])) :  currentRow[\"ROLE_ID\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "ROLE_ID",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "ROLE_ID",
+      "notation": "standard",
+      "originalId": "ROLE_ID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ROLE_NAME": {
+      "alias": "ROLE_NAME",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"ROLE_NAME\"])) :  currentRow[\"ROLE_NAME\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "ROLE_NAME",
+      "index": 2,
+      "isCellEditable": true,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": true,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Name",
+      "notation": "standard",
+      "originalId": "ROLE_NAME",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "TOTAL_ROWS": {
+      "alias": "TOTAL_ROWS",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"TOTAL_ROWS\"])) :  currentRow[\"TOTAL_ROWS\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "id": "TOTAL_ROWS",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "TOTAL_ROWS",
+      "notation": "standard",
+      "originalId": "TOTAL_ROWS",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "UPDATE_DATE": {
+      "alias": "UPDATE_DATE",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (  currentRow[\"UPDATE_DATE\"]==undefined?\"\":moment( currentRow[\"UPDATE_DATE\"]).format())) :   currentRow[\"UPDATE_DATE\"]==undefined?\"\":moment( currentRow[\"UPDATE_DATE\"]).format() })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "UPDATE_DATE",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Update date",
+      "notation": "standard",
+      "originalId": "UPDATE_DATE",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "USER_ID": {
+      "alias": "USER_ID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table_Roles.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"USER_ID\"])) :  currentRow[\"USER_ID\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "USER_ID",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Modify by",
+      "notation": "standard",
+      "originalId": "USER_ID",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "Manage",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "menuButton",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "RIGHT",
+      "iconAlign": "right",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Manage",
+      "labelColor": "#FFFFFF",
+      "menuButtonLabel": " ",
+      "menuButtoniconName": "more",
+      "menuColor": "#71717a",
+      "menuItems": {
+        "menuItem82d12g3x6i": {
+          "id": "menuItem82d12g3x6i",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Assign Permissions",
+          "onClick": "{{JS_Roles.onEditPermission();}}",
+          "widgetId": "pcmswubeb0"
+        },
+        "menuItemhf0oep2s64": {
+          "id": "menuItemhf0oep2s64",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "{{showModal(Modal_ConfirmDeleteR.name);}}",
+          "widgetId": "vvs6xdrf5h"
+        }
+      },
+      "menuItemsSource": "STATIC",
+      "menuVariant": "TERTIARY",
+      "notation": "standard",
+      "originalId": "customColumn2",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "serverSidePaginationEnabled": true,
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{SP_SELECT_ROLES.data.filter((row)=>row.ID!=undefined)}}",
+  "textSize": "0.875rem",
+  "topRow": 0,
+  "totalRecordsCount": "{{SP_SELECT_ROLES.data[0].TOTAL_ROWS}}",
+  "type": "TABLE_WIDGET_V2",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "q7rinxiikk",
+  "widgetName": "Table_Roles"
+}

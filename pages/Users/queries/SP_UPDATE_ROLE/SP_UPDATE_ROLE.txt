@@ -1,0 +1,5 @@
+EXECUTE  [dbo].[UPDATE_ROLE] 
+   @ID = {{Table_Roles.updatedRow==undefined?"": Table_Roles.updatedRow.ID}}
+  ,@ROLE_NAME = {{Table_Roles.updatedRow==undefined?"": Table_Roles.updatedRow.ROLE_NAME}}
+  ,@USER_ID = {{appsmith.user.email}}
+

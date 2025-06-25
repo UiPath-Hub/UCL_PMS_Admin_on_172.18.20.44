@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_6d51e7f9-0321-4c63-88be-c1bfe95aae73",
+  "id": "Master_JS_VALIDATION",
+  "unpublishedCollection": {
+    "name": "JS_VALIDATION",
+    "pageId": "Master",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "csvValidate",
+        "value": "[]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+EXECUTE [dbo].[DELETE_PERMISSION]
+   @ID = {{Table_Permissions.triggeredRow.ID}}
+  ,@USER_ID = {{appsmith.user.email}}

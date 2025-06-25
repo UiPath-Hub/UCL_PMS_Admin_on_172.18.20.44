@@ -1,0 +1,4 @@
+EXECUTE [dbo].[DELETE_ROLE] 
+   @ID = {{Table_Roles.triggeredRow==undefined?"":Table_Roles.triggeredRow.ID}}
+  ,@USER_ID  = {{appsmith.user.email}}
+

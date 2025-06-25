@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "673abac8b839c15f34ad2652_8f309fe2-42e0-42c4-bd7c-e446a30ca09b",
+  "id": "Users_Configs",
+  "unpublishedCollection": {
+    "name": "Configs",
+    "pageId": "Users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "Default_Account",
+        "value": "\"Default_Account\""
+      },
+      {
+        "name": "RolesTablePageSize",
+        "value": "15"
+      },
+      {
+        "name": "PermissionsTablePageSize",
+        "value": "15"
+      },
+      {
+        "name": "RolesDropdownMaximumElement",
+        "value": "1000"
+      }
+    ]
+  }
+}

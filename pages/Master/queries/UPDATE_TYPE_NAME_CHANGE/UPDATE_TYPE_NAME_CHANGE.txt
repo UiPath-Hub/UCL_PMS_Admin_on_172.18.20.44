@@ -1,0 +1,1 @@
+UPDATE dbo.PMS_MASTER_LIST SET TYPE_NAME={{this.params.NEW_TYPE_NAME}} WHERE [TYPE_NAME]={{this.params.TYPE_NAME}} 

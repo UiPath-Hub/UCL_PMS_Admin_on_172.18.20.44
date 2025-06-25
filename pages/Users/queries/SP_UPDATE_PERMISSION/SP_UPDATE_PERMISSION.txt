@@ -1,0 +1,5 @@
+EXECUTE [dbo].[UPDATE_PERMISSION] 
+   @ID = {{Table_Permissions.updatedRow.ID}}
+  ,@PERMISSION_NAME = {{Table_Permissions.updatedRow.PERMISSION_NAME}}
+  ,@DEFINITION = {{Table_Permissions.updatedRow.DEFINITION}}
+  ,@USER_ID = {{appsmith.user.email}}

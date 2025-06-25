@@ -1,0 +1,53 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 7,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "buttonColor": "#15803d",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "{{appsmith.store[\"CurrentVersion\"].ACTIVE==true?\"cloud\":\"history\"}}",
+  "isDisabled": "{{JS.isHasChange()||appsmith.store[\"CurrentVersion\"].ACTIVE}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1zlpujtugq",
+  "leftColumn": 56,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{UPDATE_TYPE_NAME_ACTIVE.run().then(() => {\n  JS.init(appsmith.store[\"CurrentVersion\"].VERSION, appsmith.store[\"TYPE_NAME_MODAL\"]);\n});}}",
+  "parentColumnSpace": 12.96875,
+  "parentId": "xl24ear4h8",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lcdv4t3dtt",
+  "widgetName": "IconButton4"
+}

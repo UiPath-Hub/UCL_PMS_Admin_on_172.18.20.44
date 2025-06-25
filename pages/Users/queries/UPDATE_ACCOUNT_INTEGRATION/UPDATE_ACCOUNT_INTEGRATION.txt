@@ -1,0 +1,1 @@
+UPDATE dbo.PMS_ACCOUNTS_MAPPING SET PMS_OBJECT_ID={{Table_Users.triggeredRow._id}} WHERE ID = {{SP_SELECT_ALL_ROLES_BY_EO.data[0].ID}}

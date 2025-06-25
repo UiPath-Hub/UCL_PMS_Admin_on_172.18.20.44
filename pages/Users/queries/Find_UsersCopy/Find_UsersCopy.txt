@@ -1,0 +1,6 @@
+{
+  "find": "user",
+  "filter": {deleted:false},
+  "limit": 10,
+  "batchSize": 10
+}

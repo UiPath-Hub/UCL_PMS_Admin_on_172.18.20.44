@@ -1,0 +1,8 @@
+EXECUTE [dbo].[ASSIGN_ACCOUNT_ROLES] 
+   @EMAIL = {{Table_Users.triggeredRow.email}}
+  ,@PMS_OBJECT_ID = {{Table_Users.triggeredRow._id}}
+  ,@MAXIMUM_SESSIONS = {{Inp_MAXIMUM_SESSIONS.text}}
+  ,@KICK_OLDEST_SESSION_OUT = {{Swi_KICK_OLDEST_SESSION_OUT.isSwitchedOn}}
+  ,@SESSION_TIMEOUT_HOUR = {{Inp_SESSION_TIMEOUT_HOUR.text}}
+  ,@ROLE_ID_StringArray = {{JSON.stringify(MSelect_Roles.selectedOptionValues)}}
+  ,@USER_ID = {{appsmith.user.email}}

@@ -1,0 +1,9 @@
+EXECUTE [dbo].[INSERT_PMS_MASTER_LIST] 
+   @TYPE_NAME = {{this.params.TYPE_NAME}}
+  ,@SYSTEM_VALUE = {{this.params.SYSTEM_VALUE}}
+  ,@FIXED_VALUE = {{this.params.FIXED_VALUE}}
+  ,@SYSTEM_INDEX = {{this.params.SYSTEM_INDEX}}
+  ,@USER_ID = {{appsmith.user.email}}
+  ,@VERSION = {{this.params.VERSION}}
+	,@ACTIVE = {{this.params.ACTIVE}}
+

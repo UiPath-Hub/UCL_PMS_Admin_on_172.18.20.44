@@ -1,0 +1,4 @@
+EXECUTE [dbo].[SELECT_ALL_ROLES] 
+   @pPageSize = {{Configs.RolesDropdownMaximumElement}}
+  ,@pPageIndex = {{1}}
+

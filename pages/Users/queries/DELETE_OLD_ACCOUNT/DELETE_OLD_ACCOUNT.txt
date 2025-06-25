@@ -1,0 +1,1 @@
+DELETE TOP(1) FROM dbo.PMS_ACCOUNTS_MAPPING WHERE EMAIL = {{Table_Users.triggeredRow.email}}

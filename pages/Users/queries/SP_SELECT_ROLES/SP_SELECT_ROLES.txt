@@ -1,0 +1,4 @@
+EXECUTE [dbo].[SELECT_ALL_ROLES] 
+   @pPageSize = {{Configs.RolesTablePageSize}}
+  ,@pPageIndex = {{Table_Roles.pageNo}}
+
