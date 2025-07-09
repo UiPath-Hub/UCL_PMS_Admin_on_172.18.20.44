@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "V1_INSERT_VALIDATION",
     "pageId": "Master",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

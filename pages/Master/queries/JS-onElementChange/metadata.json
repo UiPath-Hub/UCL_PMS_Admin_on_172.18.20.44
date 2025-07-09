@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS.onElementChange",
     "name": "onElementChange",
     "pageId": "Master",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

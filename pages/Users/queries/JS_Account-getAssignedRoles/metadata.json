@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS_Account.getAssignedRoles",
     "name": "getAssignedRoles",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

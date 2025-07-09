@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS_Roles.onNewRole",
     "name": "onNewRole",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -97,9 +97,9 @@
       "pluginId": "mongo-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "Find_UsersAllAttributes",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

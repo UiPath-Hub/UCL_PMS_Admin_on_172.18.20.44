@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS_VALIDATION.onDeleteFieldsValidationClick",
     "name": "onDeleteFieldsValidationClick",
     "pageId": "Master",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

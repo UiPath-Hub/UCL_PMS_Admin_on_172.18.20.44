@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS_MASTER.cancelNewVersion",
     "name": "cancelNewVersion",
     "pageId": "Master",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

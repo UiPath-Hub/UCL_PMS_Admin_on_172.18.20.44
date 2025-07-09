@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS.test",
     "name": "test",
     "pageId": "Master",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

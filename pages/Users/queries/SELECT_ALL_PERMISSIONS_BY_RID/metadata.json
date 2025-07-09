@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "SELECT_ALL_PERMISSIONS_BY_RID",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -18,9 +18,9 @@
       "pluginId": "redis-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "ScanKey",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -23,9 +23,9 @@
       "pluginId": "mssql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "SELECT_ALL_MAPPING",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

@@ -39,9 +39,9 @@
       "name": "pms_nonprod",
       "pluginId": "mongo-plugin"
     },
-    "executeOnLoad": false,
     "name": "Query1",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JS_Account.mappingAccount",
     "name": "mappingAccount",
     "pageId": "Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }
