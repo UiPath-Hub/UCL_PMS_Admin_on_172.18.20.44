@@ -38,6 +38,10 @@
       {
         "name": "ROLES_AND_GROUPS",
         "value": "[]"
+      },
+      {
+        "name": "START_PAGE",
+        "value": "{\n  data: \"Home\",\n  regex: \"\",\n  required: true\n}"
       }
     ]
   }

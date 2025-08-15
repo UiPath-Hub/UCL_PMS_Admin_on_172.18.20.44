@@ -37,9 +37,10 @@
     "lastActiveAt",
     "_id",
     "MappingTo",
+    "Start_page",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1748314660295,
+  "columnUpdatedAt": 1755073588504,
   "columnWidthMap": {
     "customColumn1": 60,
     "email": 224,
@@ -81,6 +82,9 @@
     },
     {
       "key": "primaryColumns.MappingTo.computedValue"
+    },
+    {
+      "key": "primaryColumns.Start_page.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,6 +151,40 @@
       "label": "MappingTo",
       "notation": "standard",
       "originalId": "MappingTo",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "Start_page": {
+      "alias": "Start page",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Table_Users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"Start page\"])) : currentRow[\"Start page\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "RIGHT",
+      "id": "Start_page",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Start page",
+      "notation": "standard",
+      "originalId": "Start page",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

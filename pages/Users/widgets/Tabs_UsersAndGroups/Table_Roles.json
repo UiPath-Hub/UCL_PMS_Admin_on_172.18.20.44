@@ -42,10 +42,11 @@
     "EditActions1",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1732608994473,
+  "columnUpdatedAt": 1755073157109,
   "columnWidthMap": {
     "CREATE_DATE": 216,
     "EditActions1": 163,
+    "ROLE_NAME": 172,
     "USER_ID": 219,
     "customColumn1": 123
   },

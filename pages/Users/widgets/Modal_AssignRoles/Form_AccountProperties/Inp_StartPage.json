@@ -1,10 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS))(MSelect_Roles.options, MSelect_Roles.serverSideFiltering) }}",
+  "defaultText": "{{Default_Account.START_PAGE.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,31 +14,35 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "defaultText"
     },
     {
-      "key": "defaultOptionValue"
+      "key": "isRequired"
+    },
+    {
+      "key": "regex"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "isRequired"
     }
   ],
   "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": "{{Default_Account.START_PAGE.required}}",
   "isVisible": true,
-  "key": "z75psrjkoc",
+  "key": "oxrgmu0kn3",
+  "label": "Start page",
   "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelText": "Role",
-  "labelTextColor": "",
+  "labelPosition": "Left",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
-  "labelWidth": 5,
+  "labelWidth": "22",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -47,23 +52,20 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "optionLabel": "ROLE_NAME",
-  "optionValue": "ID",
-  "originalBottomRow": 17,
-  "originalTopRow": 9,
   "parentColumnSpace": 6.75,
   "parentId": "b0ebpkbx12",
   "parentRowSpace": 10,
-  "placeholderText": "",
+  "regex": "{{Default_Account.START_PAGE.regex}}",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "serverSideFiltering": false,
-  "shouldScrollContents": true,
-  "sourceData": "{{SP_SELECT_ROLES_DROPDOWN.data==undefined?[]:SP_SELECT_ROLES_DROPDOWN.data}}",
-  "topRow": 25,
-  "type": "MULTI_SELECT_WIDGET_V2",
-  "version": 1,
-  "widgetId": "wkighv1ecm",
-  "widgetName": "MSelect_Roles"
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tooltip": "Navigate to the specified page when the user session is created.",
+  "topRow": 21,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "yqool67aga",
+  "widgetName": "Inp_StartPage"
 }

@@ -66,9 +66,10 @@ export default {
 			let MAXY = Inp_MAXIMUM_SESSIONS.text === Default_Account.MAXIMUM_SESSIONS.data;
 			let SESY = Inp_SESSION_TIMEOUT_HOUR.text === Default_Account.SESSION_TIMEOUT_HOUR.data;
 			let KICKY = Swi_KICK_OLDEST_SESSION_OUT.isSwitchedOn === Default_Account.KICK_OLDEST_SESSION_OUT.data;
-			let PreData = JSON.stringify(Default_Account.ROLES_AND_GROUPS.map((ele)=>ele.value))
+			let STARTP = Inp_StartPage.text === Default_Account.START_PAGE.data;
+			let PreData = JSON.stringify(Default_Account.ROLES_AND_GROUPS.map((ele)=>ele.value));
 			let PresentData = JSON.stringify(MSelect_Roles.selectedOptionValues);
-			return PreData===PresentData && MAXY&&SESY&&KICKY;
+			return PreData===PresentData && MAXY&&SESY&&KICKY && STARTP;
 		}else{
 			return false;
 		}
@@ -98,7 +99,7 @@ export default {
 			await Promise.all(Find_Users.data.map((row)=>{
 				let SQL_DATA = SELECT_ALL_MAPPING.data.filter((sqlrow)=>sqlrow.PMS_OBJECT_ID===row._id && sqlrow.EMAIL===row.email)
 				if(SQL_DATA.length >0){
-					Map.push({...row,MappingTo:SQL_DATA[0].ID});
+					Map.push({...row,MappingTo:SQL_DATA[0].ID,"Start page":SQL_DATA[0].START_PAGE});
 					//console.log("Map")
 				}else{
 					Map.push({...row})

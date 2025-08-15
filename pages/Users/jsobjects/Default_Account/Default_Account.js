@@ -9,4 +9,5 @@ export default {
 	//LAST_ACTIVE:{data:"",regex:"",required:false},
 	SESSION_TIMEOUT_HOUR:{data:1,regex:"",required:false},
 	ROLES_AND_GROUPS:[],
+	START_PAGE:{data:"Home",regex:"",required:true},
 }
