@@ -2,21 +2,22 @@
   "animateLoading": true,
   "backgroundColor": "#FFFFFF",
   "borderColor": "#E0DEDE",
+  "borderRadius": "0px",
   "borderWidth": "0",
-  "bottomRow": 53,
+  "bottomRow": 29,
   "boxShadow": "none",
   "children": [
     {
-      "bottomRow": 530,
+      "bottomRow": 290,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
       "isLoading": false,
       "isVisible": true,
       "leftColumn": 0,
-      "minHeight": 236.25,
+      "minHeight": 234.75,
       "parentColumnSpace": 1,
-      "parentId": "bxlrtfllmn",
+      "parentId": "8jfbf7oank",
       "parentRowSpace": 1,
       "props": {
         "canExtend": false,
@@ -25,18 +26,27 @@
         "detachFromLayout": true
       },
       "renderMode": "CANVAS",
-      "rightColumn": 432,
+      "rightColumn": 136.9375,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "b0ebpkbx12",
-      "widgetName": "Canvas12"
+      "widgetId": "tikuyzx22p",
+      "widgetName": "Canvas17"
     }
   ],
   "containerStyle": "card",
   "displayName": "Container",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "hideCard": false,
@@ -44,9 +54,9 @@
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
-  "key": "mntuxy7o11",
-  "leftColumn": 0,
+  "isVisible": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?true:false:false}}",
+  "key": "rk2pkbgc6d",
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -58,10 +68,10 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 53,
+  "originalBottomRow": 29,
   "originalTopRow": 0,
-  "parentColumnSpace": 6.75,
-  "parentId": "lkas6ncejj",
+  "parentColumnSpace": 2.1396484375,
+  "parentId": "wtnjh3mriu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -80,6 +90,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "bxlrtfllmn",
-  "widgetName": "Form_AccountProperties"
+  "widgetId": "8jfbf7oank",
+  "widgetName": "Container1"
 }

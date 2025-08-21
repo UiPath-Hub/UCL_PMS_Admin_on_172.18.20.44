@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 24,
   "boxShadow": "none",
   "defaultText": "{{Default_Account.START_PAGE.data}}",
   "dynamicBindingPathList": [
@@ -32,7 +32,7 @@
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": "{{Default_Account.START_PAGE.required}}",
   "isVisible": true,
@@ -52,8 +52,10 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentId": "1aow08sa5u",
   "parentRowSpace": 10,
   "regex": "{{Default_Account.START_PAGE.regex}}",
   "renderMode": "CANVAS",
@@ -63,9 +65,9 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Navigate to the specified page when the user session is created.",
-  "topRow": 21,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "yqool67aga",
-  "widgetName": "Inp_StartPage"
+  "widgetId": "ps5rb8sd85",
+  "widgetName": "Inp_StartPage_G2"
 }

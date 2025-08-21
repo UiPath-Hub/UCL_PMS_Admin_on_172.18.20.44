@@ -1,3 +1,3 @@
 EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] 
-   @EMAIL = {{Table_Users.triggeredRow==undefined?"": Table_Users.triggeredRow.email}}
-  ,@PMS_OBJECT_ID = {{Table_Users.triggeredRow==undefined?"":Table_Users.triggeredRow._id}}
+   @EMAIL = {{Configs.TriggeredUserSetting==undefined?"": Configs.TriggeredUserSetting.email}}
+  ,@PMS_OBJECT_ID = {{Configs.TriggeredUserSetting==undefined?"":Configs.TriggeredUserSetting._id}}

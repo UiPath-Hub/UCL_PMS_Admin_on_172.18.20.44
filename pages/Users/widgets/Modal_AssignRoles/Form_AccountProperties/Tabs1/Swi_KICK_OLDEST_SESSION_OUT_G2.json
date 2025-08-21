@@ -1,0 +1,50 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "defaultSwitchState": "{{Default_Account.KICK_OLDEST_SESSION_OUT.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": true,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jhj7xdumbo",
+  "label": "Kick oldest session out",
+  "labelPosition": "Left",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 17,
+  "needsErrorInfo": false,
+  "originalBottomRow": 12,
+  "originalTopRow": 8,
+  "parentColumnSpace": 6.75,
+  "parentId": "1aow08sa5u",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "topRow": 16,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "nxqltrv7zt",
+  "widgetName": "Swi_KICK_OLDEST_SESSION_OUT_G2"
+}

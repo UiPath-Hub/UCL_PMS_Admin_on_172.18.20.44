@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 55,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 430,
+      "bottomRow": 550,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 430,
+      "minHeight": 530,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -58,14 +58,14 @@
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
-  "height": 430,
+  "height": 550,
   "isCanvas": true,
   "isLoading": false,
   "key": "tougx99xi3",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
-  "minHeight": 430,
+  "minHeight": 550,
   "mobileBottomRow": 27,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 9,
@@ -84,5 +84,5 @@
   "version": 2,
   "widgetId": "kwggdg0vwe",
   "widgetName": "Modal_AssignRoles",
-  "width": 506
+  "width": 866
 }

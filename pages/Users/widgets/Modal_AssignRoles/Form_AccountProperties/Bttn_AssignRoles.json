@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 39,
+  "bottomRow": 51,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY_BUTTON",
@@ -21,6 +21,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -41,8 +44,8 @@
   "mobileTopRow": 18,
   "needsErrorInfo": false,
   "onClick": "{{JS_Account.onUpdateAccountButton();}}",
-  "originalBottomRow": 24,
-  "originalTopRow": 20,
+  "originalBottomRow": 51,
+  "originalTopRow": 47,
   "parentColumnSpace": 6.75,
   "parentId": "b0ebpkbx12",
   "parentRowSpace": 10,
@@ -54,9 +57,9 @@
   "rightColumn": 64,
   "text": "Update",
   "tooltip": "",
-  "topRow": 35,
+  "topRow": 47,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ac1ypyo7wf",
+  "widgetId": "6ofvi9y1hx",
   "widgetName": "Bttn_AssignRoles"
 }

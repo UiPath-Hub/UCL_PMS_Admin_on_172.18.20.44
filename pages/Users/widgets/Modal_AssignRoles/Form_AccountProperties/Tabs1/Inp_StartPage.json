@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "defaultText": "{{Default_Account.START_PAGE.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "regex"
+    },
+    {
+      "key": "tooltip"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_StartPage.isChecked:false:false}}",
+  "isLoading": false,
+  "isRequired": "{{Default_Account.START_PAGE.required}}",
+  "isVisible": true,
+  "key": "oxrgmu0kn3",
+  "label": "Start page",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "22",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "originalBottomRow": 24,
+  "originalTopRow": 19,
+  "parentColumnSpace": 6.75,
+  "parentId": "wtnjh3mriu",
+  "parentRowSpace": 10,
+  "regex": "{{Default_Account.START_PAGE.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "tooltip": "{{Inp_StartPage.isDisabled?\"Using group setting\":\"Navigate to the specified page when the user session is created.\"}}\n",
+  "topRow": 19,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "yqool67aga",
+  "widgetName": "Inp_StartPage"
+}

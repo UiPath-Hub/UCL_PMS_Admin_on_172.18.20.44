@@ -22,6 +22,18 @@
       {
         "name": "RolesDropdownMaximumElement",
         "value": "1000"
+      },
+      {
+        "name": "appid",
+        "value": "\"6811ba35b17cda379f75b951\""
+      },
+      {
+        "name": "TriggeredUserSetting",
+        "value": "{\n  isEnabled: true,\n  _id: \"\",\n  email: \"\",\n  mappingTo: \"No mapping\",\n  \"Start page\": \"Default(Home)\",\n  IN_GROUP: false,\n  Type: \"\",\n  Group: \"\",\n  lastActiveAt: \"\",\n  name: \"\"\n}"
+      },
+      {
+        "name": "TableUserTrigger",
+        "value": "\"TableUserTrigger\""
       }
     ]
   }

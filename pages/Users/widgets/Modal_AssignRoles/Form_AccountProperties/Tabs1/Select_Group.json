@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS))(MSelect_Roles.options, MSelect_Roles.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,9 +14,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,11 +28,10 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "z75psrjkoc",
+  "key": "9jwp367ys3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Role",
-  "labelTextColor": "",
+  "labelText": "Group Name",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
@@ -47,23 +43,20 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "optionLabel": "ROLE_NAME",
+  "optionLabel": "EMAIL",
   "optionValue": "ID",
-  "originalBottomRow": 17,
-  "originalTopRow": 9,
-  "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentColumnSpace": 7.40625,
+  "parentId": "1aow08sa5u",
   "parentRowSpace": 10,
-  "placeholderText": "",
+  "placeholderText": "Select group setting",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "serverSideFiltering": false,
-  "shouldScrollContents": true,
-  "sourceData": "{{SP_SELECT_ROLES_DROPDOWN.data==undefined?[]:SP_SELECT_ROLES_DROPDOWN.data}}",
-  "topRow": 25,
-  "type": "MULTI_SELECT_WIDGET_V2",
+  "sourceData": "{{SELECT_ALL_MAPPING.data.filter(i=>i.IS_GROUP)}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "wkighv1ecm",
-  "widgetName": "MSelect_Roles"
+  "widgetId": "t48rdofj38",
+  "widgetName": "Select_Group"
 }

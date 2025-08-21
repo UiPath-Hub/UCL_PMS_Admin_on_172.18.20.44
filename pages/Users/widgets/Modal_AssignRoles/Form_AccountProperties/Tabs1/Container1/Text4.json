@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
-  "disableLink": true,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -12,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -24,33 +20,33 @@
   "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
-  "key": "01nsh7eylm",
+  "key": "d3y38xriof",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 50,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 9,
-  "originalTopRow": 5,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentColumnSpace": 2.1396484375,
+  "parentId": "tikuyzx22p",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "Account email : {{Table_Users.triggeredRow.email}}",
-  "textAlign": "LEFT",
+  "text": "Priority setting",
+  "textAlign": "CENTER",
   "textColor": "",
-  "topRow": 5,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "7pbg633a8w",
-  "widgetName": "Txt_AccountName"
+  "widgetId": "1yh27hbi9y",
+  "widgetName": "Text4"
 }

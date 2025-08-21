@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 32,
   "boxShadow": "none",
-  "defaultText": "{{Default_Account.SESSION_TIMEOUT_HOUR.data}}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS))(MSelect_Roles_G2.options, MSelect_Roles_G2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,35 +13,31 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "sourceData"
     },
     {
-      "key": "isRequired"
-    },
-    {
-      "key": "regex"
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isRequired"
+      "key": "sourceData"
     }
   ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "NUMBER",
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
-  "isRequired": "{{Default_Account.SESSION_TIMEOUT_HOUR.required}}",
+  "isRequired": false,
   "isVisible": true,
-  "key": "oxrgmu0kn3",
-  "label": "Session timeout (Hour)",
+  "key": "z75psrjkoc",
   "labelAlignment": "left",
-  "labelPosition": "Left",
-  "labelStyle": "",
+  "labelPosition": "Auto",
+  "labelText": "",
+  "labelTextColor": "",
   "labelTextSize": "0.875rem",
-  "labelWidth": "22",
+  "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -52,19 +47,23 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
+  "optionLabel": "ROLE_NAME",
+  "optionValue": "ID",
+  "originalBottomRow": 35,
+  "originalTopRow": 28,
   "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentId": "1aow08sa5u",
   "parentRowSpace": 10,
-  "regex": "{{Default_Account.SESSION_TIMEOUT_HOUR.regex}}",
+  "placeholderText": "",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "shouldAllowAutofill": false,
-  "showStepArrows": false,
-  "topRow": 13,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "wui251vda7",
-  "widgetName": "Inp_SESSION_TIMEOUT_HOUR"
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{SP_SELECT_ROLES_DROPDOWN.data==undefined?[]:SP_SELECT_ROLES_DROPDOWN.data}}",
+  "topRow": 28,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "4v03xsjahk",
+  "widgetName": "MSelect_Roles_G2"
 }

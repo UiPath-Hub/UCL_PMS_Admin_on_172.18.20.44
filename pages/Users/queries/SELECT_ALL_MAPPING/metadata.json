@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DECLARE @Count int;\nSELECT @Count=COUNT(*) FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nIF @Count>0\nSELECT ID ,EMAIL,PMS_OBJECT_ID,START_PAGE, @Count AS TOTAL_RECORED FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nELSE SELECT 0 AS TOTAL_RECORED",
+      "body": "DECLARE @Count int;\nSELECT @Count=COUNT(*) FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nIF @Count>0\nSELECT *, @Count AS TOTAL_RECORED FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nELSE SELECT 0 AS TOTAL_RECORED",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

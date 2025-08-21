@@ -2,40 +2,38 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
-  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-  "buttonColor": "#3b82f6",
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
+      "key": "buttonColor"
+    },
+    {
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconAlign": "left",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "cfq22tl5w7",
-  "leftColumn": 50,
+  "key": "s8ncz76f05",
+  "leftColumn": 57,
   "minWidth": 120,
   "mobileBottomRow": 4,
-  "mobileLeftColumn": 48,
-  "mobileRightColumn": 64,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 8,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo( `http://172.18.20.44/workspace/${Configs.appid}/settings/members`, {}, 'NEW_WINDOW');}}",
-  "parentColumnSpace": 19.78125,
+  "onClick": "{{JS_Account.onEditRoles();}}",
+  "parentColumnSpace": 19.9375,
   "parentId": "zkbkb8pgls",
   "parentRowSpace": 10,
   "placement": "CENTER",
@@ -43,11 +41,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 57,
-  "text": "Manage users",
+  "rightColumn": 64,
+  "text": "New Group",
   "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "uszqvyqqwu",
-  "widgetName": "Bttn_InviteUsers"
+  "widgetId": "6r07ftgvzm",
+  "widgetName": "Button3"
 }

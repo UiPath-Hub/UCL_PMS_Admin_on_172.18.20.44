@@ -1,0 +1,79 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 28,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS))(MSelect_Roles.options, MSelect_Roles.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTooltip"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_ROLES.isChecked:false:false}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "z75psrjkoc",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Role",
+  "labelTextColor": "",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "{{MSelect_Roles.isDisabled?\"Using group setting\":\"\"}}",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "optionLabel": "ROLE_NAME",
+  "optionValue": "ID",
+  "originalBottomRow": 28,
+  "originalTopRow": 24,
+  "parentColumnSpace": 6.75,
+  "parentId": "wtnjh3mriu",
+  "parentRowSpace": 10,
+  "placeholderText": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "serverSideFiltering": false,
+  "shouldScrollContents": true,
+  "sourceData": "{{SP_SELECT_ROLES_DROPDOWN.data==undefined?[]:SP_SELECT_ROLES_DROPDOWN.data}}",
+  "topRow": 24,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "wkighv1ecm",
+  "widgetName": "MSelect_Roles"
+}

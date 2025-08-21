@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 10,
   "boxShadow": "none",
   "defaultText": "{{Default_Account.MAXIMUM_SESSIONS.data}}",
   "dynamicBindingPathList": [
@@ -21,18 +21,27 @@
     },
     {
       "key": "regex"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "tooltip"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "isRequired"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": false,
+  "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_MAXIMUM_SESSIONS.isChecked:false:false}}",
   "isLoading": false,
   "isRequired": "{{Default_Account.MAXIMUM_SESSIONS.required}}",
   "isVisible": true,
@@ -52,17 +61,21 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
   "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentId": "wtnjh3mriu",
   "parentRowSpace": 10,
   "regex": "{{Default_Account.MAXIMUM_SESSIONS.regex}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 50,
   "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
   "showStepArrows": false,
-  "topRow": 9,
+  "tooltip": "{{Inp_MAXIMUM_SESSIONS.isDisabled?\"Using group setting\":\"\"}}",
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "5kg78t8ti1",

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] \n   @EMAIL = {{Table_Users.triggeredRow==undefined?\"\": Table_Users.triggeredRow.email}}\n  ,@PMS_OBJECT_ID = {{Table_Users.triggeredRow==undefined?\"\":Table_Users.triggeredRow._id}}\n",
+      "body": "EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] \n   @EMAIL = {{Configs.TriggeredUserSetting==undefined?\"\": Configs.TriggeredUserSetting.email}}\n  ,@PMS_OBJECT_ID = {{Configs.TriggeredUserSetting==undefined?\"\":Configs.TriggeredUserSetting._id}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

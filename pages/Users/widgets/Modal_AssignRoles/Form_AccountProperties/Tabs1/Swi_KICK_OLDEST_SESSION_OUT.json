@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignWidget": "LEFT",
   "animateLoading": true,
-  "bottomRow": 21,
+  "bottomRow": 19,
   "boxShadow": "none",
   "defaultSwitchState": "{{Default_Account.KICK_OLDEST_SESSION_OUT.data}}",
   "dynamicBindingPathList": [
@@ -11,16 +11,22 @@
     },
     {
       "key": "defaultSwitchState"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "defaultSwitchState"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_KICK_OLDEST_SESSION.isChecked:false:false}}",
   "isLoading": false,
   "isVisible": true,
   "key": "jhj7xdumbo",
@@ -34,13 +40,16 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 17,
   "needsErrorInfo": false,
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
   "parentColumnSpace": 6.75,
-  "parentId": "b0ebpkbx12",
+  "parentId": "wtnjh3mriu",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
-  "topRow": 17,
+  "rightColumn": 27,
+  "shouldScrollContents": true,
+  "topRow": 15,
   "type": "SWITCH_WIDGET",
   "version": 1,
   "widgetId": "alhbq10ooy",

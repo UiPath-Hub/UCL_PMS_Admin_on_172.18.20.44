@@ -1,0 +1,83 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "defaultText": "{{Default_Account.SESSION_TIMEOUT_HOUR.data}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "regex"
+    },
+    {
+      "key": "tooltip"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_SESSION_TIMEOUT_HOUR.isChecked:false:false}}",
+  "isLoading": false,
+  "isRequired": "{{Default_Account.SESSION_TIMEOUT_HOUR.required}}",
+  "isVisible": true,
+  "key": "oxrgmu0kn3",
+  "label": "Session timeout (Hour)",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "22",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "originalBottomRow": 15,
+  "originalTopRow": 10,
+  "parentColumnSpace": 6.75,
+  "parentId": "wtnjh3mriu",
+  "parentRowSpace": 10,
+  "regex": "{{Default_Account.SESSION_TIMEOUT_HOUR.regex}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "tooltip": "{{Inp_SESSION_TIMEOUT_HOUR.isDisabled?\"Using group setting\":\"\"}}",
+  "topRow": 10,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "wui251vda7",
+  "widgetName": "Inp_SESSION_TIMEOUT_HOUR"
+}
