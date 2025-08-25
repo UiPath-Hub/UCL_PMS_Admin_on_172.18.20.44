@@ -3,7 +3,7 @@
   "borderColor": "#e0dede",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 32,
+  "bottomRow": 34,
   "bottomRowBeforeCollapse": 42,
   "boxShadow": "none",
   "defaultModel": "{{\n{\n\"items\":MSelect_Roles_G2.selectedOptionLabels.map((item,i)=>({key:i,value:item})),\n\t\"fontSize\":13\n}\n}}",
@@ -51,8 +51,8 @@
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "originalBottomRow": 42,
   "originalTopRow": 32,
-  "parentColumnSpace": 20.25,
-  "parentId": "1aow08sa5u",
+  "parentColumnSpace": 4.375,
+  "parentId": "ojzzpjcro8",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "rightColumn": 64,
@@ -62,7 +62,7 @@
     "js": "import React from \"https://esm.sh/react@18.2.0\";\nimport ReactDOM from \"https://esm.sh/react-dom@18.2.0\";\nfunction ItemsBox() {\n  // Fallback mock data for initial state\n  const mockItems = [{\n    key: 0,\n    value: \"item1\"\n  }, {\n    key: 1,\n    value: \"item2\"\n  }, {\n    key: 2,\n    value: \"item3\"\n  }];\n  // Load from model or fallback\n  const [items, setItems] = React.useState(appsmith.model.items || mockItems);\n  const [input, setInput] = React.useState(appsmith.model.inputName || \"\");\n\n  // Listen to Appsmith model updates\n  React.useEffect(() => {\n    appsmith.onModelChange(model => {\n      if (model.items) setItems(model.items);\n      if (typeof model.inputName === \"string\") setInput(model.inputName);\n    });\n  }, []);\n\n  // Handle input change\n  const handleInputChange = e => {\n    const val = e.target.value;\n    setInput(val);\n    appsmith.updateModel && appsmith.updateModel({\n      inputName: val\n    });\n  };\n\n  // Add input as new item (if not empty and not duplicate)\n  const handleInputAdd = e => {\n    const tag = e.currentTarget.tagName;\n    if (tag == \"input\" && e.type === \"keydown\" && e.key === \"Enter\" || tag == \"button\" && e.type === \"click\") {\n      if (input.trim()) {\n        if (!items.includes(input.trim())) {\n          const newItems = [...items, input.trim()];\n          setItems(newItems);\n          appsmith.updateModel && appsmith.updateModel({\n            items: newItems,\n            inputName: \"\"\n          });\n          setInput(\"\");\n          appsmith.triggerEvent && appsmith.triggerEvent(\"onItemAdd\", input.trim());\n        }\n      }\n    }\n  };\n\n  // Remove an item\n  const handleRemoveItem = React.useCallback(idx => {\n    const removeVal = items[idx];\n    const newItems = items.filter((_, i) => i !== idx);\n    setItems(newItems);\n    appsmith.updateModel && appsmith.updateModel({\n      items: newItems\n    });\n    appsmith.triggerEvent && appsmith.triggerEvent(\"onItemRemove\", removeVal);\n  }, [items]);\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"items-box-inner\"\n  }, items.map((item, idx) => /*#__PURE__*/React.createElement(\"span\", {\n    className: \"item-chip\",\n    key: item + idx\n  }, item.value)));\n}\nappsmith.onReady(() => {\n  ReactDOM.render(/*#__PURE__*/React.createElement(ItemsBox, null), document.getElementById(\"root\"));\n});"
   },
   "theme": "{{appsmith.theme}}",
-  "topRow": 32,
+  "topRow": 24,
   "topRowBeforeCollapse": 32,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
@@ -71,6 +71,6 @@
     "js": "import React from \"https://esm.sh/react@18.2.0\";\nimport ReactDOM from \"https://esm.sh/react-dom@18.2.0\";\n\nfunction ItemsBox() {\n  // Fallback mock data for initial state\n  const mockItems = [\n    {key:0,value:\"item1\"},\n    {key:1,value:\"item2\"},\n    {key:2,value:\"item3\"}\n  ];\n  // Load from model or fallback\n  const [items, setItems] = React.useState(appsmith.model.items || mockItems);\n  const [input, setInput] = React.useState(appsmith.model.inputName || \"\");\n\n  // Listen to Appsmith model updates\n  React.useEffect(() => {\n    appsmith.onModelChange((model) => {\n      if (model.items) setItems(model.items);\n      if (typeof model.inputName === \"string\") setInput(model.inputName);\n    });\n  }, []);\n\n  // Handle input change\n  const handleInputChange = (e) => {\n    const val = e.target.value;\n    setInput(val);\n    appsmith.updateModel && appsmith.updateModel({ inputName: val });\n  };\n\n  // Add input as new item (if not empty and not duplicate)\n  const handleInputAdd = (e) => {\n\t\tconst tag = e.currentTarget.tagName;\n\t\tif ((tag==\"input\" && e.type === \"keydown\" && e.key === \"Enter\")||(tag==\"button\" && e.type === \"click\")){\n\t\t\tif (input.trim()) {\n\t\t\t\tif (!items.includes(input.trim())) {\n\t\t\t\t\tconst newItems = [...items, input.trim()];\n\t\t\t\t\tsetItems(newItems);\n\t\t\t\t\tappsmith.updateModel && appsmith.updateModel({ items: newItems, inputName: \"\" });\n\t\t\t\t\tsetInput(\"\");\n\t\t\t\t\tappsmith.triggerEvent && appsmith.triggerEvent(\"onItemAdd\", input.trim());\n\t\t\t\t}\n\t\t\t}\t\n\t\t}\n\n  };\n\n  // Remove an item\n  const handleRemoveItem = React.useCallback(\n    (idx) => {\n      const removeVal = items[idx];\n      const newItems = items.filter((_, i) => i !== idx);\n      setItems(newItems);\n      appsmith.updateModel && appsmith.updateModel({ items: newItems });\n      appsmith.triggerEvent && appsmith.triggerEvent(\"onItemRemove\", removeVal);\n    },\n    [items]\n  );\n\n  return (\n\t\t\n    <div className=\"items-box-inner\">\n      {items.map((item, idx) => (\n        <span className=\"item-chip\" key={item + idx}>\n          {item.value}\n        </span>\n      ))}\n    </div>\n  );\n}\n\nappsmith.onReady(() => {\n  ReactDOM.render(<ItemsBox />, document.getElementById(\"root\"));\n});\n"
   },
   "version": 1,
-  "widgetId": "cse7zxnflz",
+  "widgetId": "p6ooesp761",
   "widgetName": "Display_item"
 }

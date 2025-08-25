@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 28,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS))(MSelect_Roles.options, MSelect_Roles.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.ROLES_AND_GROUPS.data))(MSelect_Roles.options, MSelect_Roles.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -38,7 +38,7 @@
   "isDisabled": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?!Cb_CUSTOM_ROLES.isChecked:false:false}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "z75psrjkoc",
   "labelAlignment": "left",

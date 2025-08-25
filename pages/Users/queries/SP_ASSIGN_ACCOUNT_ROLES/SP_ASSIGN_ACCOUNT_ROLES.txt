@@ -1,8 +1,18 @@
 EXECUTE [dbo].[ASSIGN_ACCOUNT_ROLES] 
-   @EMAIL = {{Table_Users.triggeredRow.email}}
-  ,@PMS_OBJECT_ID = {{Table_Users.triggeredRow._id}}
+	@UPDATE_NAME = {{Inp_AccountName.text}}
+	,@MAPPING_ID = {{Configs.TriggeredUserSetting.mappingTo}}
+  ,@EMAIL = {{Configs.TriggeredUserSetting.Type === JS_Account.CONST_GROUP_TYPE? Configs.TriggeredUserSetting?.name:Configs.TriggeredUserSetting?.email}}
+  ,@PMS_OBJECT_ID = {{Configs.TriggeredUserSetting?._id||""}}
+	,@CUSTOM_MAXIMUM_SESSIONS = {{Cb_CUSTOM_MAXIMUM_SESSIONS.isChecked}}
+	,@CUSTOM_SESSION_TIMEOUT_HOUR = {{Cb_CUSTOM_SESSION_TIMEOUT_HOUR.isChecked}}
+	,@CUSTOM_KICK_OLDEST_SESSION_OUT = {{Cb_CUSTOM_KICK_OLDEST_SESSION.isChecked}}
+	,@CUSTOM_START_PAGE = {{Cb_CUSTOM_StartPage.isChecked}}
+	,@CUSTOM_ROLE = {{Cb_CUSTOM_ROLES.isChecked}}	
+	,@IN_GROUP_ID = {{Select_Group.selectedOptionValue?Select_Group.selectedOptionValue:null}}
+	,@IS_GROUP = {{Configs.TriggeredUserSetting?.Type==JS_Account.CONST_GROUP_TYPE?1:0}}	
   ,@MAXIMUM_SESSIONS = {{Inp_MAXIMUM_SESSIONS.text}}
   ,@KICK_OLDEST_SESSION_OUT = {{Swi_KICK_OLDEST_SESSION_OUT.isSwitchedOn}}
   ,@SESSION_TIMEOUT_HOUR = {{Inp_SESSION_TIMEOUT_HOUR.text}}
+	,@START_PAGE = {{Inp_StartPage.text}}
   ,@ROLE_ID_StringArray = {{JSON.stringify(MSelect_Roles.selectedOptionValues)}}
-  ,@USER_ID = {{appsmith.user.email}}
+	,@USER_ID = {{appsmith.user.email}}

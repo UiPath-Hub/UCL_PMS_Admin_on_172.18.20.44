@@ -29,7 +29,7 @@
       },
       {
         "name": "TriggeredUserSetting",
-        "value": "{\n  isEnabled: true,\n  _id: \"\",\n  email: \"\",\n  mappingTo: \"No mapping\",\n  \"Start page\": \"Default(Home)\",\n  IN_GROUP: false,\n  Type: \"\",\n  Group: \"\",\n  lastActiveAt: \"\",\n  name: \"\"\n}"
+        "value": "{\n  \"isEnabled\": \"\",\n  \"name\": \"\",\n  \"_id\": \"\",\n  \"email\": \"\",\n  \"mappingTo\": \"\",\n  \"Start page\": \"\",\n  \"IN_GROUP\": \"\",\n  \"Type\": \"\",\n  \"Group\": \"\",\n  \"IS_GROUP\": \"\",\n  \"lastActiveAt\": \"\"\n}"
       },
       {
         "name": "TableUserTrigger",

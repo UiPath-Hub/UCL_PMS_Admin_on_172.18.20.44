@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignWidget": "LEFT",
   "animateLoading": true,
-  "bottomRow": 20,
+  "bottomRow": 12,
   "boxShadow": "none",
-  "defaultSwitchState": "{{Default_Account.KICK_OLDEST_SESSION_OUT.data}}",
+  "defaultSwitchState": "{{Default_GroupSetting.KICK_OLDEST_SESSION_OUT.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -36,15 +36,15 @@
   "needsErrorInfo": false,
   "originalBottomRow": 12,
   "originalTopRow": 8,
-  "parentColumnSpace": 6.75,
-  "parentId": "1aow08sa5u",
+  "parentColumnSpace": 4.375,
+  "parentId": "ojzzpjcro8",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 30,
-  "topRow": 16,
+  "topRow": 8,
   "type": "SWITCH_WIDGET",
   "version": 1,
-  "widgetId": "nxqltrv7zt",
+  "widgetId": "uaydkvf59e",
   "widgetName": "Swi_KICK_OLDEST_SESSION_OUT_G2"
 }

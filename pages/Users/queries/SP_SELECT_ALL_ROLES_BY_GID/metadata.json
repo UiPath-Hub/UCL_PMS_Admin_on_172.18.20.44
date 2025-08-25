@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "673abac8b839c15f34ad2652_a4340362-6f0a-46bd-9cc4-8203f78a0a48",
-  "id": "Users_SELECT_ALL_MAPPING",
+  "gitSyncId": "6811c5e566bdcc075542f090_f06a8afa-5bb3-4764-a294-5c0df2711eac",
+  "id": "Users_SP_SELECT_ALL_ROLES_BY_GID",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "set nocount on;\nDECLARE @Count int;\nSELECT @Count=COUNT(*) FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nIF @Count>0\nSELECT *, @Count AS TOTAL_RECORED FROM dbo.PMS_ACCOUNTS_MAPPING_QAS\nELSE SELECT 0 AS TOTAL_RECORED",
+      "body": "EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] \n   @PAIRED_ACCOUNT_ID = {{this.params.ID}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "UCL_PMS",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "SELECT_ALL_MAPPING",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "SP_SELECT_ALL_ROLES_BY_GID",
     "pageId": "Users",
     "runBehaviour": "MANUAL",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

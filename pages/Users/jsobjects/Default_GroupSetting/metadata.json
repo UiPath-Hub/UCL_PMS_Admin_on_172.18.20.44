@@ -1,8 +1,8 @@
 {
-  "gitSyncId": "673abac8b839c15f34ad2652_e7a0af2e-a081-4a2a-9c44-3374dad4e238",
-  "id": "Users_Default_Account",
+  "gitSyncId": "6811c5e566bdcc075542f090_e27d25c7-1263-477a-96a3-00535f52a4b9",
+  "id": "Users_Default_GroupSetting",
   "unpublishedCollection": {
-    "name": "Default_Account",
+    "name": "Default_GroupSetting",
     "pageId": "Users",
     "pluginId": "js-plugin",
     "pluginType": "JS",

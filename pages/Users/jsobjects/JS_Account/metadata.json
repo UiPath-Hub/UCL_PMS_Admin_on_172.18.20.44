@@ -6,6 +6,19 @@
     "pageId": "Users",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "CONST_NO_MAPPING",
+        "value": "\"No mapping\""
+      },
+      {
+        "name": "CONST_USER_TYPE",
+        "value": "\"User\""
+      },
+      {
+        "name": "CONST_GROUP_TYPE",
+        "value": "\"Group\""
+      }
+    ]
   }
 }

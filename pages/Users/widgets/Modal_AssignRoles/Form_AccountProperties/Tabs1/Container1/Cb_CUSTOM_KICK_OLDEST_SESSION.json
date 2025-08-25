@@ -4,16 +4,24 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
-  "defaultCheckedState": false,
+  "defaultCheckedState": "{{Default_Account.CUSTOM_KICK_OLDEST_SESSION_OUT.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isLoading": false,

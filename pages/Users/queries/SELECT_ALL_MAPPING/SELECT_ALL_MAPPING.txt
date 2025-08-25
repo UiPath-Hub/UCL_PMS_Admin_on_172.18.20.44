@@ -1,3 +1,4 @@
+set nocount on;
 DECLARE @Count int;
 SELECT @Count=COUNT(*) FROM dbo.PMS_ACCOUNTS_MAPPING_QAS
 IF @Count>0

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 17,
   "disableLink": true,
   "dynamicBindingPathList": [
     {
@@ -44,7 +44,7 @@
   "text": "Please manage to either confirm that the data that has already been set up is exactly correct or reset the available data to default if it is not correct.",
   "textAlign": "LEFT",
   "textColor": "",
-  "topRow": 13,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

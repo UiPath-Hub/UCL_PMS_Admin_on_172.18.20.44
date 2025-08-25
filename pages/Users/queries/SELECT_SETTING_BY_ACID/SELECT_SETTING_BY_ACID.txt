@@ -1,0 +1,11 @@
+DECLARE @Count int;
+DECLARE @tableTemp table(ID int);
+set NOCOUNT ON;
+insert into @tableTemp(ID) SELECT ID FROM dbo.USER_SETTINGS 
+where dbo.USER_SETTINGS.PAIRED_ACCOUNT_ID={{this.params.ID}};
+
+SELECT @Count=COUNT(*) FROM @tableTemp
+IF @Count>0
+SELECT *, @Count AS TOTAL_RECORED FROM dbo.USER_SETTINGS
+where ID in (select ID from @tableTemp)
+ELSE SELECT 0 AS TOTAL_RECORED

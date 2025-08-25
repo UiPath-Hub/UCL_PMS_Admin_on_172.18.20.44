@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] \n   @EMAIL = {{Configs.TriggeredUserSetting==undefined?\"\": Configs.TriggeredUserSetting.email}}\n  ,@PMS_OBJECT_ID = {{Configs.TriggeredUserSetting==undefined?\"\":Configs.TriggeredUserSetting._id}}\n",
+      "body": "EXECUTE [dbo].[SELECT_FOR_ACCOUNT_ROLES_BY_EO] \n   @EMAIL = {{Configs.TriggeredUserSetting==undefined?\"\": Configs.TriggeredUserSetting.Type === JS_Account.CONST_GROUP_TYPE?Configs.TriggeredUserSetting.name:Configs.TriggeredUserSetting.email}}\n  ,@PMS_OBJECT_ID = {{Configs.TriggeredUserSetting==undefined?\"\":Configs.TriggeredUserSetting.Type === JS_Account.CONST_GROUP_TYPE?\"\":Configs.TriggeredUserSetting._id}}\n\t,@PAIRED_ACCOUNT_ID = {{Configs.TriggeredUserSetting==undefined?null:Configs.TriggeredUserSetting.mappingTo}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

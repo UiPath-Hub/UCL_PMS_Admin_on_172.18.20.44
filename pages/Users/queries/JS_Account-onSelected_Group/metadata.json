@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "673abac8b839c15f34ad2652_732ba5a2-bf2c-4b6c-9653-eced8a48f199",
-  "id": "Users_JS_Account.getAssignedRoles",
+  "gitSyncId": "6811c5e566bdcc075542f090_fbc02c46-0d39-4a3e-bf7d-5b120b8e25fd",
+  "id": "Users_JS_Account.onSelected_Group",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -8,7 +8,7 @@
       "encodeParamsToggle": true,
       "jsArguments": [
         {
-          "name": "data"
+          "name": "GROUP_ID"
         }
       ],
       "paginationType": "NONE",
@@ -26,8 +26,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "JS_Account.getAssignedRoles",
-    "name": "getAssignedRoles",
+    "fullyQualifiedName": "JS_Account.onSelected_Group",
+    "name": "onSelected_Group",
     "pageId": "Users",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

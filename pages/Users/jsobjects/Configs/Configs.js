@@ -5,16 +5,17 @@ export default {
 	RolesDropdownMaximumElement:1000,
 	appid:"6811ba35b17cda379f75b951",
 	TriggeredUserSetting:{
-		isEnabled:true,
-		_id:"",
-		email:"",
-		mappingTo:"No mapping",
-		"Start page":"Default(Home)",
-		IN_GROUP:false,
-		Type:"",
-		Group:"",
-		lastActiveAt:"",
-		name:""
-	},
+		"isEnabled": "",
+		"name": "",
+		"_id": "",
+		"email": "",
+		"mappingTo": "",
+		"Start page": "",
+		"IN_GROUP": "",
+		"Type": "",
+		"Group": "",
+		"IS_GROUP": "",
+		"lastActiveAt": ""
+},
 	TableUserTrigger:"TableUserTrigger"
 }

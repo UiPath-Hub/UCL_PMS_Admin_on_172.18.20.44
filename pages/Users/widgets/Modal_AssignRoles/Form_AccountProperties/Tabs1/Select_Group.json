@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Default_Account.IN_GROUP_ID.data||\"\"))(Select_Group.options, Select_Group.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,7 +25,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -43,6 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
+  "onOptionChange": "{{JS_Account.onSelected_Group(Select_Group.selectedOptionValue);}}",
   "optionLabel": "EMAIL",
   "optionValue": "ID",
   "parentColumnSpace": 7.40625,

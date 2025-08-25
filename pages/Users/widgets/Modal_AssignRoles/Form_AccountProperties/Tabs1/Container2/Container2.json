@@ -1,0 +1,94 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderWidth": "0",
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "children": [
+    {
+      "bottomRow": 360,
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "isLoading": false,
+      "isVisible": true,
+      "leftColumn": 0,
+      "minHeight": 148.75,
+      "parentColumnSpace": 1,
+      "parentId": "hj1wrr3m6s",
+      "parentRowSpace": 1,
+      "props": {
+        "canExtend": false,
+        "children": [],
+        "containerStyle": "none",
+        "detachFromLayout": true
+      },
+      "renderMode": "CANVAS",
+      "rightColumn": 280,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "ojzzpjcro8",
+      "widgetName": "Canvas19"
+    }
+  ],
+  "containerStyle": "card",
+  "displayName": "Container",
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "stretch",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.b4f5f9eb27fc2bb537b53187836aea6c.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": "{{Select_Group.selectedOptionValue?_.trim(Select_Group.selectedOptionValue)!==\"\"?true:false:false}}",
+  "key": "75uts1kvxa",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 10,
+  "minWidth": 450,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 43,
+  "originalTopRow": 7,
+  "parentColumnSpace": 4.375,
+  "parentId": "1aow08sa5u",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "div",
+    "parent",
+    "group"
+  ],
+  "shouldScrollContents": true,
+  "tabId": "",
+  "tags": [
+    "Layout"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
+  "topRow": 7,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "hj1wrr3m6s",
+  "widgetName": "Container2"
+}

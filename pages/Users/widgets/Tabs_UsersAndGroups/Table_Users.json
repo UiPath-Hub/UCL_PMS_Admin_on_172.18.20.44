@@ -41,9 +41,10 @@
     "_id",
     "isEnabled",
     "IN_GROUP",
+    "IS_GROUP",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1755496632302,
+  "columnUpdatedAt": 1755833722380,
   "columnWidthMap": {
     "Group": 123,
     "MappingTo": 156,
@@ -101,6 +102,9 @@
     },
     {
       "key": "primaryColumns.mappingTo.computedValue"
+    },
+    {
+      "key": "primaryColumns.IS_GROUP.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -203,6 +207,40 @@
       "label": "IN_GROUP",
       "notation": "standard",
       "originalId": "IN_GROUP",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "IS_GROUP": {
+      "alias": "IS_GROUP",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "checkbox",
+      "computedValue": "{{(() => { const tableData = Table_Users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"IS_GROUP\"])) : IS_GROUP })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "RIGHT",
+      "id": "IS_GROUP",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "IS_GROUP",
+      "notation": "standard",
+      "originalId": "IS_GROUP",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -475,7 +513,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = Table_Users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"mappingTo\"])) : mappingTo })()}}",
+      "computedValue": "{{(() => { const tableData = Table_Users.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"mappingTo\"])) : currentRow[\"mappingTo\"] })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

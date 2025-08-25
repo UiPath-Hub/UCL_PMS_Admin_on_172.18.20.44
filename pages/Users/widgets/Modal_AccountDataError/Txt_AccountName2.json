@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
+  "bottomRow": 21,
   "disableLink": true,
   "dynamicBindingPathList": [
     {
@@ -47,7 +47,7 @@
   "text": "Account email : {{SP_SELECT_ALL_ROLES_BY_EO.data[0].EMAIL}}",
   "textAlign": "LEFT",
   "textColor": "",
-  "topRow": 18,
+  "topRow": 17,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
