@@ -17,5 +17,6 @@ export default {
 		"IS_GROUP": "",
 		"lastActiveAt": ""
 },
-	TableUserTrigger:"TableUserTrigger"
+	TableUserTrigger:"TableUserTrigger",
+	re:()=>_.trim( Inp_AccountEmail.text,"-")
 }

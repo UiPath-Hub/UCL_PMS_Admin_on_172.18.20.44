@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultText": "{{Configs.TriggeredUserSetting?(Configs.TriggeredUserSetting.name)||(Configs.TriggeredUserSetting.email):\"\"}}",
+  "defaultText": "{{Default_Account.GROUP_EMAIL.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,30 +17,36 @@
       "key": "defaultText"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
-      "key": "isDisabled"
+      "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
     }
   ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": "{{Configs.TriggeredUserSetting.Type===JS_Account.CONST_USER_TYPE}}",
+  "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
-  "isVisible": true,
+  "isRequired": "{{Default_Account.GROUP_EMAIL.required}}",
+  "isVisible": "{{Configs.TriggeredUserSetting.Type===JS_Account.CONST_GROUP_TYPE}}",
   "key": "ouwfxwelj4",
-  "label": "Account Name",
+  "label": "Group Email",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
-  "labelWidth": "9",
-  "leftColumn": 0,
+  "labelWidth": "8",
+  "leftColumn": 32,
   "maxChars": "100",
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -58,12 +64,12 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 64,
   "shouldScrollContents": true,
   "showStepArrows": false,
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "3x67xs40f1",
-  "widgetName": "Inp_AccountName"
+  "widgetId": "7xtghygsr6",
+  "widgetName": "Inp_AccountEmail"
 }

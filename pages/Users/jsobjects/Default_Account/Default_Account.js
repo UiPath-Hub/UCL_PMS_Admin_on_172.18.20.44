@@ -17,5 +17,6 @@ export default {
 	CUSTOM_ROLE:{data:"",regex:"",required:true},
 	IS_GROUP:{data:"",regex:"",required:true},
 	IN_GROUP_ID:{data:"",regex:"",required:true},
+	GROUP_EMAIL:{data:"",regex:"",required:false},
 	DefaultOverwrite:false,
 }

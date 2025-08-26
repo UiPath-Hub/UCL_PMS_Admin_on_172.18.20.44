@@ -72,6 +72,10 @@
         "value": "{\n  data: \"\",\n  regex: \"\",\n  required: true\n}"
       },
       {
+        "name": "GROUP_EMAIL",
+        "value": "{\n  data: \"\",\n  regex: \"\",\n  required: false\n}"
+      },
+      {
         "name": "DefaultOverwrite",
         "value": "false"
       }

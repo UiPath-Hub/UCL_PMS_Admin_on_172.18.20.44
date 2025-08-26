@@ -10,6 +10,7 @@ EXECUTE [dbo].[ASSIGN_ACCOUNT_ROLES]
 	,@CUSTOM_ROLE = {{Cb_CUSTOM_ROLES.isChecked}}	
 	,@IN_GROUP_ID = {{Select_Group.selectedOptionValue?Select_Group.selectedOptionValue:null}}
 	,@IS_GROUP = {{Configs.TriggeredUserSetting?.Type==JS_Account.CONST_GROUP_TYPE?1:0}}	
+	,@GROUP_EMAIL = {{Configs.TriggeredUserSetting?.Type==JS_Account.CONST_GROUP_TYPE?Inp_AccountEmail.text:null}}	
   ,@MAXIMUM_SESSIONS = {{Inp_MAXIMUM_SESSIONS.text}}
   ,@KICK_OLDEST_SESSION_OUT = {{Swi_KICK_OLDEST_SESSION_OUT.isSwitchedOn}}
   ,@SESSION_TIMEOUT_HOUR = {{Inp_SESSION_TIMEOUT_HOUR.text}}

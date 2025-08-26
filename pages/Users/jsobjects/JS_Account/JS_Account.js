@@ -109,7 +109,7 @@ export default {
 		console.log(keys);
 		keys.forEach((key)=>{
 			if(DefaultObject[key].data !== undefined && data[key] !== undefined){
-				DefaultObject[key].data=data[key];
+				DefaultObject[key].data=data[key]||"";
 			}
 		})
 		
@@ -187,7 +187,7 @@ export default {
 				.forEach(sqlrow => {
 				userMappings.push({
 					"name": sqlrow.EMAIL,
-					"email": "-",
+					"email": sqlrow.GROUP_EMAIL||"-",
 					"mappingTo": sqlrow?.ID,
 					"Start page": sqlrow?.START_PAGE || "Default(Home)",
 					"IN_GROUP": false,
