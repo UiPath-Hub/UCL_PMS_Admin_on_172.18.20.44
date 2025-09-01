@@ -93,9 +93,6 @@
       "key": "primaryColumns.TOTAL_ROWS.computedValue"
     },
     {
-      "key": "totalRecordsCount"
-    },
-    {
       "key": "primaryColumns.EditActions1.saveButtonColor"
     },
     {
@@ -522,12 +519,12 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{SP_SELECT_PERMISSIONS.data.filter((row)=>row.ID != undefined)}}",
   "textSize": "0.875rem",
   "topRow": 0,
-  "totalRecordsCount": "{{SP_SELECT_PERMISSIONS.data[0].TOTAL_ROWS}}",
+  "totalRecordsCount": "",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

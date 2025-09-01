@@ -1,4 +1,3 @@
 EXECUTE [dbo].[SELECT_ALL_PERMISSIONS] 
-   @pPageSize = {{Configs.PermissionsTablePageSize}}
-  ,@pPageIndex = {{Table_Permissions.pageNo}}
+ 
 

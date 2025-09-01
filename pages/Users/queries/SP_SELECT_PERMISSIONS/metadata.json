@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[SELECT_ALL_PERMISSIONS] \n   @pPageSize = {{Configs.PermissionsTablePageSize}}\n  ,@pPageIndex = {{Table_Permissions.pageNo}}\n\n",
+      "body": "EXECUTE [dbo].[SELECT_ALL_PERMISSIONS] \n \n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,11 +22,7 @@
       "name": "UCL_PMS",
       "pluginId": "mssql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "name": "SP_SELECT_PERMISSIONS",
     "pageId": "Users",
     "runBehaviour": "ON_PAGE_LOAD",
