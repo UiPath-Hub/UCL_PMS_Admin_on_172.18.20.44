@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "673abac8b839c15f34ad2652_90c3d2c6-dc64-48c3-b5d3-33b18f3fe2bb",
+  "gitSyncId": "6811c5e566bdcc075542f090_1a754e33-1b91-44f6-9bde-d797b6df005e",
   "unpublishedPage": {
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 820,
+          "bottomRow": 380,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 810,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 79,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Users",
-    "slug": "users"
+    "name": "Intregation",
+    "slug": "intregation"
   }
 }

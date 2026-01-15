@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "EXECUTE [dbo].[INSERT_PMS_MASTER_LIST] \n   @TYPE_NAME = {{this.params.TYPE_NAME}}\n  ,@SYSTEM_VALUE = {{this.params.SYSTEM_VALUE}}\n  ,@FIXED_VALUE = {{this.params.FIXED_VALUE}}\n  ,@SYSTEM_INDEX = {{this.params.SYSTEM_INDEX}}\n  ,@USER_ID = {{appsmith.user.email}}\n  ,@VERSION = {{this.params.VERSION}}\n\t,@ACTIVE = {{this.params.ACTIVE}}\n\n",
+      "body": "EXECUTE [dbo].[INSERT_PMS_MASTER_LIST] \n   @TYPE_NAME = {{this.params.TYPE_NAME}}\n  ,@SYSTEM_VALUE = {{this.params.SYSTEM_VALUE}}\n  ,@FIXED_VALUE = {{this.params.FIXED_VALUE}}\n  ,@SYSTEM_INDEX = {{this.params.SYSTEM_INDEX}}\n  ,@USER_ID = {{appsmith.user.email}}\n  ,@VERSION = {{this.params.VERSION}}\n\t,@ACTIVE = {{this.params.ACTIVE}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

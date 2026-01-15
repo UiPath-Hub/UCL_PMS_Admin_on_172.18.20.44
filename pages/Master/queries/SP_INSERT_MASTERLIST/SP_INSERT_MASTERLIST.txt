@@ -6,4 +6,3 @@ EXECUTE [dbo].[INSERT_PMS_MASTER_LIST]
   ,@USER_ID = {{appsmith.user.email}}
   ,@VERSION = {{this.params.VERSION}}
 	,@ACTIVE = {{this.params.ACTIVE}}
-

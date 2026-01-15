@@ -27,6 +27,10 @@
     {
       "id": "Master",
       "isDefault": false
+    },
+    {
+      "id": "Intregation",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
