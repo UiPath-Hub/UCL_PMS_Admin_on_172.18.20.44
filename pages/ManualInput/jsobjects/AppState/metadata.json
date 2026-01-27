@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_3efe7274-8ed7-4314-82c2-beff18b32ff8",
+  "id": "ManualInput_AppState",
+  "unpublishedCollection": {
+    "name": "AppState",
+    "pageId": "ManualInput",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "CurrentSession",
+        "value": "{\n  SessionToken: \"\",\n  email: \"\",\n  tenant: \"\",\n  permissions: [\"\"],\n  visibility: false\n}"
+      },
+      {
+        "name": "CurrentSessionDefault",
+        "value": "{\n  SessionToken: \"\",\n  email: \"\",\n  tenant: \"\",\n  permissions: [\"\"],\n  visibility: true\n}"
+      },
+      {
+        "name": "ModalConfirm",
+        "value": "\"\""
+      }
+    ]
+  }
+}

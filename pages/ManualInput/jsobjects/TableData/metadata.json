@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_aa3a1a0b-9063-4a6f-9c0b-0ad1e5b29ec0",
+  "id": "ManualInput_TableData",
+  "unpublishedCollection": {
+    "name": "TableData",
+    "pageId": "ManualInput",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "CATALOG",
+        "value": "[]"
+      },
+      {
+        "name": "INVENTORY",
+        "value": "[]"
+      },
+      {
+        "name": "PROFILE",
+        "value": "[]"
+      },
+      {
+        "name": "COMPANY",
+        "value": "[]"
+      }
+    ]
+  }
+}

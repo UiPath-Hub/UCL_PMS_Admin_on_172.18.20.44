@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_1dd07e22-3d2d-4ee7-8303-b0f8eab5bf21",
+  "id": "ManualInput_TableAddressColumn",
+  "unpublishedCollection": {
+    "name": "TableAddressColumn",
+    "pageId": "ManualInput",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "COMPANY",
+        "value": "{}"
+      }
+    ]
+  }
+}

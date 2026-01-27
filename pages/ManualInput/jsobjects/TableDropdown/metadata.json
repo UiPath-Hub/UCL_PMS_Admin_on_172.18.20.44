@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_6b128f49-d4c1-4351-b072-be6560001b6a",
+  "id": "ManualInput_TableDropdown",
+  "unpublishedCollection": {
+    "name": "TableDropdown",
+    "pageId": "ManualInput",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "CATALOG",
+        "value": "{\n  PRODUCT_TYPE_TH: {\n    run: async () => await DD_PRODUCT_TYPE.run(),\n    data: DD_PRODUCT_TYPE.data,\n    customName: \"PRODUCT_TYPE(M)\",\n    spliter: true,\n    splittedArrayPosition: 0,\n    splitWith: \"/\"\n  },\n  UNIT_TH: {\n    run: async () => await DD_UNIT.run(),\n    data: DD_UNIT.data,\n    customName: \"UNIT(M)\",\n    spliter: true,\n    splittedArrayPosition: 0,\n    splitWith: \"/\"\n  },\n  FLOOR_NO: {\n    run: async () => await DD_FLOOR.run(),\n    data: DD_FLOOR.data,\n    customName: \"FLOOR(M)\"\n  }\n}"
+      },
+      {
+        "name": "INVENTORY",
+        "value": "{\n  FLOOR_NO: {\n    run: async () => await DD_FLOOR.run(),\n    data: DD_FLOOR.data,\n    customName: \"FLOOR(M)\"\n  },\n  ZONE: {\n    run: async () => await DD_ZONE.run(),\n    data: DD_ZONE.data,\n    customName: \"ZONE(M)\"\n  },\n  UOM: {\n    run: async () => await DD_UOM.run(),\n    data: DD_UOM.data,\n    customName: \"UOM(M)\",\n    spliter: true,\n    splittedArrayPosition: 0,\n    splitWith: \"/\"\n  },\n  STATUS: {\n    run: async () => await DD_STATUS.run(),\n    data: DD_STATUS.data,\n    customName: \"STATUS(M)\"\n  },\n  CT: {\n    run: async () => await DD_CT.run(),\n    data: DD_CT.data,\n    customName: \"CT(M)\"\n  }\n}"
+      },
+      {
+        "name": "PROFILE",
+        "value": "{\n  FREQUENCY_TYPE: {\n    run: async () => await DD_FREQUENCY_TYPE.run(),\n    data: DD_FREQUENCY_TYPE.data,\n    customName: \"FREQUENCY_TYPE(M)\"\n  }\n}"
+      },
+      {
+        "name": "COMPANY",
+        "value": "{\n  COMPANY_TYPE_NAME: {\n    run: async () => await DD_COMPANY_TYPE.run(),\n    data: DD_COMPANY_TYPE.data,\n    customName: \"COMPANY_TYPE(M)\"\n  },\n  STATUS: {\n    run: async () => await DD_STATUS.run(),\n    data: DD_STATUS.data,\n    customName: \"STATUS(M)\"\n  },\n  COMPANY_BUSINESS_TYPE: {\n    run: async () => await DD_COMPANY_BUSINESS_TYPE.run(),\n    data: DD_COMPANY_BUSINESS_TYPE.data,\n    customName: \"COMPANY_BUSINESS_TYPE(M)\"\n  },\n  TITLE_PREFIX: {\n    run: async () => await DD_TITLE_PREFIX.run(),\n    data: DD_TITLE_PREFIX.data,\n    customName: \"TITLE_PREFIX(M)\"\n  },\n  SUFFIX: {\n    run: async () => await DD_SUFFIX.run(),\n    data: DD_SUFFIX.data,\n    customName: \"SUFFIX(M)\"\n  },\n  COMPANY_BRANCH_TYPE: {\n    run: async () => await DD_BRANCH_TYPE.run(),\n    data: DD_BRANCH_TYPE.data,\n    customName: \"BRANCH_TYPE(M)\"\n  },\n  BILLING_COMPANY_TYPE_NAME: {\n    run: async () => await DD_COMPANY_TYPE.run(),\n    data: DD_COMPANY_TYPE.data,\n    customName: \"COMPANY_TYPE(M)\"\n  },\n  BILLING_TITLE_PREFIX: {\n    run: async () => await DD_TITLE_PREFIX.run(),\n    data: DD_TITLE_PREFIX.data,\n    customName: \"TITLE_PREFIX(M)\"\n  },\n  BILLING_SUFFIX: {\n    run: async () => await DD_SUFFIX.run(),\n    data: DD_SUFFIX.data,\n    customName: \"SUFFIX(M)\"\n  },\n  BILLING_BRANCH_TYPE: {\n    run: async () => await DD_BRANCH_TYPE.run(),\n    data: DD_BRANCH_TYPE.data,\n    customName: \"BRANCH_TYPE(M)\"\n  },\n  BILLING_COMPANY_BUSINESS_TYPE: {\n    run: async () => await DD_COMPANY_BUSINESS_TYPE.run(),\n    data: DD_COMPANY_BUSINESS_TYPE.data,\n    customName: \"COMPANY_BUSINESS_TYPE(M)\"\n  }\n}"
+      }
+    ]
+  }
+}

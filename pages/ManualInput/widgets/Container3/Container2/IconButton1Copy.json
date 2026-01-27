@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 17,
+  "bottomRowBeforeCollapse": 17,
+  "boxShadow": "none",
+  "buttonColor": "#71717a",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "duplicate",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{AppState.CurrentSession.SessionToken!=\"\"}}",
+  "key": "rpeqn40m9g",
+  "leftColumn": 23,
+  "minWidth": 50,
+  "mobileBottomRow": 31,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 27,
+  "needsErrorInfo": false,
+  "onClick": "{{copyToClipboard(AppState.CurrentSession.SessionToken).then(() => {\n  showAlert('Copy to clipboard', 'info');\n});}}",
+  "originalBottomRow": 17,
+  "originalTopRow": 13,
+  "parentColumnSpace": 23.21875,
+  "parentId": "f8k0r0120b",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 27,
+  "topRow": 13,
+  "topRowBeforeCollapse": 13,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "xm5qyfkwfg",
+  "widgetName": "IconButton1Copy"
+}

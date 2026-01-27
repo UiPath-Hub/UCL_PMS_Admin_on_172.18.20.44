@@ -1,0 +1,26 @@
+DECLARE @ResultCode nvarchar(10)
+	,@ResultMessages NVARCHAR(MAX)
+	,@PRODUCT_ID NVARCHAR(MAX)
+	,@IMAGE_ID nvarchar(20)=NULL;
+
+EXEC	[dbo].[UPDATE_PMS_PRODUCT_CATALOG_LM_V2]
+		@pType = {{this.params.PRODUCT_TYPE}},
+		@pNameEN = {{this.params.PRODUCT_NAME_EN}},
+		@pNameTH = {{this.params.PRODUCT_NAME_TH}},
+		@pUnit = {{this.params.UNIT}},
+		@pAvaliableUnit ={{this.params.AVAILABLE_UNIT}},
+		@pTotalUnit = {{this.params.TOTAL_UNIT}},
+		@pFloor ={{this.params.FLOOR_NO}},
+		@pStatus = {{this.params.STATUS}},
+		@pProductCatalogDetail = {{this.params.PRODUCT_DETAIL}},
+		@ACCOUNT_CODE = {{this.params.ACCOUNT_CODE}},
+		@VAT_TYPE = {{this.params.VAT_TYPE}},
+		@INVOICE_TYPE = {{this.params.INVOICE_TYPE}}
+		--,@BASE64 = 
+		,@USER_TOKEN = {{AppState.CurrentSession.SessionToken}}
+		,@INSERT_IF_NOT_EXIST = 1
+		,@PRODUCT_ID = @PRODUCT_ID OUTPUT
+		,@ResultCode=@ResultCode OUTPUT
+		,@ResultMessages=@ResultMessages OUTPUT
+		
+SELECT @ResultCode AS RESULT_CODE,@PRODUCT_ID as PRODUCT_ID , @ResultMessages as RESULT_MESSAGES

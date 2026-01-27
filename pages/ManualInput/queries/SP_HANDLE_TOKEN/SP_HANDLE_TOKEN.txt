@@ -1,0 +1,5 @@
+EXECUTE [dbo].[USER_SESSION_HANDLER] 
+   @EMAIL = {{Input1.text}}
+	,@OWNER_ID = {{Select_TENANT.selectedOptionValue}}
+  ,@TOKEN = {{appsmith.store["userSession"]?appsmith.store["userSession"].TOKEN:""}}
+	,@RENEW = 1

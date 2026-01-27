@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_4a46f161-8159-4b67-993d-c65525598c52",
+  "id": "ManualInput_TableInsertQuery",
+  "unpublishedCollection": {
+    "name": "TableInsertQuery",
+    "pageId": "ManualInput",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "CATALOG",
+        "value": "{\n  run: async params => await _01_INSERT_CATALOG.run(params),\n  data: _01_INSERT_CATALOG.data\n}"
+      },
+      {
+        "name": "INVENTORY",
+        "value": "{\n  run: async params => await _02_INSERT_INVENTORY.run(params),\n  data: _02_INSERT_INVENTORY.data\n}"
+      },
+      {
+        "name": "PROFILE",
+        "value": "{\n  run: async params => await _03_INSERT_PROFILE.run(params),\n  data: _03_INSERT_PROFILE.data\n}"
+      },
+      {
+        "name": "COMPANY",
+        "value": "{\n  run: async params => await _03_INSERT_COMPANY.run(params),\n  data: _03_INSERT_COMPANY.data\n}"
+      }
+    ]
+  }
+}

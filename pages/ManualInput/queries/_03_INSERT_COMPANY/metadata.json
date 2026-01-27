@@ -1,0 +1,35 @@
+{
+  "gitSyncId": "6811c5e566bdcc075542f090_b3706399-1205-4854-b298-6436499b59e7",
+  "id": "ManualInput__03_INSERT_COMPANY",
+  "pluginId": "mssql-plugin",
+  "pluginType": "DB",
+  "unpublishedAction": {
+    "actionConfiguration": {
+      "body": "declare @ResultCode nvarchar(10)\n\t,@ResultMessages NVARCHAR(MAX)\n\nEXECUTE [dbo].[UPDATE_PMS_COMPANY_LM]\n   @pCOMPANY_TYPE = {{this.params.COMPANY_TYPE_NAME}}\n  ,@pCOMPANY_NAME_TH = {{this.params.COMPANY_NAME_TH}}\n  ,@pCOMPANY_NAME_EN = {{this.params.COMPANY_NAME_EN}}\n  ,@pSHOP_NAME = {{this.params.SHOP_NAME}}\n  ,@pTELEPHONE = {{this.params.TELEPHONE}}\n  ,@pSTATUS = {{this.params.STATUS}}\n  ,@pCONTACT_EMAIL = {{this.params.CONTACT_EMAIL}}\n  ,@pCOMPANY_BUSINESS_TYPE = {{this.params.COMPANY_BUSINESS_TYPE}}\n  ,@pFAX = {{this.params.FAX}}\n  ,@pTAX_ID = {{this.params.TAX_ID}}\n  ,@pWEBSITE = {{this.params.WEBSITE}}\n  ,@pCOMPANY_BUILDING_NAME_TH = {{this.params.COMPANY_BUILDING_NAME_TH}}\n  ,@pCOMPANY_BUILDING_NAME_EN = {{this.params.COMPANY_BUILDING_NAME_EN}}\n  ,@pCOMPANY_FLOOR = {{this.params.COMPANY_FLOOR}}\n  ,@pCOMPANY_ADD_NO = {{this.params.COMPANY_ADD_NO}}\n  ,@pCOMPANY_MOO = {{this.params.COMPANY_MOO}}\n  ,@pCOMPANY_SOI_TH = {{this.params.COMPANY_SOI_TH}}\n  ,@pCOMPANY_SOI_EN = {{this.params.COMPANY_SOI_EN}}\n  ,@pCOMPANY_ROAD_TH = {{this.params.COMPANY_ROAD_TH}}\n  ,@pCOMPANY_ROAD_EN = {{this.params.COMPANY_ROAD_EN}}\n\n  ,@pCOMPANY_SUB_DISTRICT = {{this.params.SUB_DISTRICT_TH}}\n  ,@pCOMPANY_DISTRICT = {{this.params.DISTRICT_TH}}\n  ,@pCOMPANY_PROVINCE = {{this.params.PROVINCE_TH}}\n\n  ,@pCOMPANY_SUB_DISTRICT_EN = {{this.params.SUB_DISTRICT_TH}}\n  ,@pCOMPANY_DISTRICT_EN = {{this.params.DISTRICT_TH}}\n  ,@pCOMPANY_PROVINCE_EN = {{this.params.PROVINCE_TH}}\n\n  ,@pCOMPANY_POSTAL_CODE = {{this.params.POSTAL_CODE}}\n  ,@USER_TOKEN = {{this.params.USER_TOKEN}}\n  ,@NEWBRANCH = {{appsmith.user.email}}\n  ,@COMPANY_LANGUAGE_TYPE = {{this.params.COMPANY_LANGUAGE_TYPE}}\n  ,@TITLE_PREFIX = {{this.params.TITLE_PREFIX}}\n  ,@TITLE_PREFIX_OTHER = {{this.params.TITLE_PREFIX_OTHER}}\n  ,@SUFFIX = {{this.params.SUFFIX}}\n  ,@COMPANY_BRANCH_TYPE = {{this.params.COMPANY_BRANCH_TYPE}}\n  ,@COMPANY_BRANCH_NUMBER = {{this.params.COMPANY_BRANCH_NUMBER}}\n  ,@OVERWRITE_BILLING_ADDRESS = {{this.params.OVERWRITE_BILLING_ADDRESS}}\n  ,@COMPANY_CODE = {{this.params.COMPANY_CODE}}\n  ,@COMPANY_BUSINESS_DETAIL_EN = {{this.params.COMPANY_BUSINESS_DETAIL_EN}}\n  ,@COMPANY_BUSINESS_DETAIL_TH = {{this.params.COMPANY_BUSINESS_DETAIL_TH}}\n  ,@IS_THIRD_PARTY = {{this.params.IS_THIRD_PARTY}}\n  ,@PRIORITY_CONTACT_ID = {{this.params.PRIORITY_CONTACT_ID}}\n\n  ,@ResultCode = @ResultCode OUTPUT\n  ,@ResultMessages = @ResultMessages OUTPUT\n  ,@INSERTED_COMPANY_ID = @COMPANY_ID OUTPUT\n  ,@INSERT_IF_NOT_EXIST = 1\n\n  ,@BILLING_COMPANY_TYPE_NAME = {{this.params.BILLING_COMPANY_TYPE_NAME}}\n  ,@BILLING_TITLE_PREFIX = {{this.params.BILLING_TITLE_PREFIX}}\n  ,@BILLING_TITLE_PREFIX_OTHER = {{this.params.BILLING_TITLE_PREFIX_OTHER}}\n  ,@BILLING_COMPANY_NAME_EN = {{this.params.BILLING_COMPANY_NAME_EN}}\n  ,@BILLING_COMPANY_NAME_TH = {{this.params.BILLING_COMPANY_NAME_TH}}\n  ,@BILLING_SUFFIX = {{this.params.BILLING_SUFFIX}}\n  ,@BILLING_BRANCH_TYPE = {{this.params.BILLING_BRANCH_TYPE}}\n  ,@BILLING_BRANCH_NUMBER = {{this.params.BILLING_BRANCH_NUMBER}}\n  ,@BILLING_SHOP_NAME = {{this.params.BILLING_SHOP_NAME}}\n  ,@BILLING_TELEPHONE = {{this.params.BILLING_TELEPHONE}}\n  ,@BILLING_CONTACT_EMAIL = {{this.params.BILLING_CONTACT_EMAIL}}\n  ,@BILLING_COMPANY_BUSINESS_TYPE = {{this.params.BILLING_COMPANY_BUSINESS_TYPE}}\n  ,@BILLING_FAX = {{this.params.BILLING_FAX}}\n  ,@BILLING_TAX_ID = {{this.params.BILLING_TAX_ID}}\n  ,@BILLING_WEBSITE = {{this.params.BILLING_WEBSITE}}\n  ,@BILLING_COMPANY_BUILDING_NAME_EN = {{this.params.BILLING_COMPANY_BUILDING_NAME_EN}}\n  ,@BILLING_COMPANY_BUILDING_NAME_TH = {{this.params.BILLING_COMPANY_BUILDING_NAME_TH}}\n  ,@BILLING_COMPANY_FLOOR = {{this.params.BILLING_COMPANY_FLOOR}}\n  ,@BILLING_COMPANY_ADD_NO = {{this.params.BILLING_COMPANY_ADD_NO}}\n  ,@BILLING_COMPANY_MOO = {{this.params.BILLING_COMPANY_MOO}}\n  ,@BILLING_COMPANY_SOI_EN = {{this.params.BILLING_COMPANY_SOI_EN}}\n  ,@BILLING_COMPANY_SOI_TH = {{this.params.BILLING_COMPANY_SOI_TH}}\n  ,@BILLING_COMPANY_ROAD_EN = {{this.params.BILLING_COMPANY_ROAD_EN}}\n  ,@BILLING_COMPANY_ROAD_TH = {{this.params.BILLING_COMPANY_ROAD_TH}}\n\n  ,@BILLING_COMPANY_SUB_DISTRICT_EN = {{this.params.BILLING_SUB_DISTRICT_TH}}\n  ,@BILLING_COMPANY_SUB_DISTRICT_TH = {{this.params.BILLING_SUB_DISTRICT_TH}}\n  ,@BILLING_COMPANY_DISTRICT_EN = {{this.params.BILLING_DISTRICT_TH}}\n  ,@BILLING_COMPANY_DISTRICT_TH = {{this.params.BILLING_DISTRICT_TH}}\n  ,@BILLING_COMPANY_PROVINCE_EN = {{this.params.BILLING_PROVINCE_TH}}\n  ,@BILLING_COMPANY_PROVINCE_TH = {{this.params.BILLING_PROVINCE_TH}}\n\n  ,@BILLING_COMPANY_POSTAL_CODE = {{this.params.BILLING_POSTAL_CODE}}\n  ,@BILLING_COMPANY_CODE = {{this.params.BILLING_COMPANY_CODE}}\n  ,@COMPANY_GROUP_NUMBER = {{this.params.COMPANY_GROUP_NUMBER}}\n  ,@STATUS = {{this.params.STATUS}}\n  ,@REMARK_OF_INVOICE = ''\n  ,@REMARK_OF_RECEIPT = ''\n  ,@CREDIT_DAY = {{this.params.CREDIT_DAY}}\n\nSELECT @ResultCode AS RESULT_CODE , @ResultMessages as RESULT_MESSAGES",
+      "encodeParamsToggle": true,
+      "paginationType": "NONE",
+      "pluginSpecifiedTemplates": [
+        {
+          "value": true
+        }
+      ],
+      "timeoutInMillisecond": 10000
+    },
+    "confirmBeforeExecute": false,
+    "datasource": {
+      "id": "UCL_PMS",
+      "isAutoGenerated": false,
+      "name": "UCL_PMS",
+      "pluginId": "mssql-plugin"
+    },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "_03_INSERT_COMPANY",
+    "pageId": "ManualInput",
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
+  }
+}

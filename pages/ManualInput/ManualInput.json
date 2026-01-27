@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "6811c5e566bdcc075542f090_1a754e33-1b91-44f6-9bde-d797b6df005e",
+  "gitSyncId": "6811c5e566bdcc075542f090_099bb4d0-b54e-42bb-86d7-3142e734cdc0",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 380,
+          "bottomRow": 970,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 810,
+          "minHeight": 910,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 79,
+          "snapRows": 89,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Intregation",
-    "slug": "intregation"
+    "name": "ManualInput",
+    "slug": "manualinput"
   }
 }

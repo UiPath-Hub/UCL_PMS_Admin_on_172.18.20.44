@@ -31,6 +31,10 @@
     {
       "id": "Intregation",
       "isDefault": false
+    },
+    {
+      "id": "ManualInput",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

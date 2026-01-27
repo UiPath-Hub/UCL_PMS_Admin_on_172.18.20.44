@@ -1,0 +1,32 @@
+declare @ResultCode nvarchar(10)
+	,@ResultMessages NVARCHAR(MAX)
+ 
+EXECUTE [dbo].[UPDATE_PRODUCT_INVENTORY]
+   @PRODUCT_ID = {{this.params.PRODUCT_ID }}
+  ,@INVENTORY_NAME = {{this.params.INVENTORY_NAME }}
+  ,@METER_ID = {{this.params.METER_ID}}
+  ,@FLOOR_NO = {{this.params.FLOOR_NO}}
+  ,@PRODUCT_DESCRIPTION = {{this.params.PRODUCT_DESCRIPTION}}
+  ,@ZONE = {{this.params.ZONE}}
+  ,@QUANTITY = {{this.params.QUANTITY}}
+  ,@CT = {{this.params.CT}}
+  ,@START_UNIT = {{this.params.START_UNIT}}
+  ,@DIGIT_LENGTH = {{this.params.DIGIT_LENGTH}}
+  ,@DECIMAL_POINT = {{this.params.DECIMAL_POINT}}
+  ,@PRICE_PER_UNIT = {{this.params.PRICE_PER_UNIT}}
+  ,@STATUS = {{this.params.STATUS}}
+	,@START_DATE={{this.params.START_DATE}}
+	,@END_DATE={{this.params.END_DATE}}
+	,@PERCENTAGE={{this.params.PERCENTAGE}}
+	,@SHARED={{Boolean(this.params.SHARED)}}
+	,@ACCOUNTING_DESCRIPTION = {{this.params.ACCOUNTING_DESCRIPTION}}
+	,@SUB_INVENTORY= {{this.params.SUB_INVENTORY||null}}
+	,@UOM = {{this.params.UOM||null}}
+	,@FLOOR_ENABLE = {{Boolean(this.params.FLOOR_ENABLE??0)}}
+	--,@BASE64 = 
+  ,@USER_TOKEN = {{AppState.CurrentSession.SessionToken}}
+	,@IS_INSERT = 1
+	,@ResultCode = @ResultCode OUTPUT
+	,@ResultMessages = @ResultMessages OUTPUT
+
+SELECT @ResultCode AS RESULT_CODE , @ResultMessages as RESULT_MESSAGES
