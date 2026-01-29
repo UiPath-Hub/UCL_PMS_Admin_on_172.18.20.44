@@ -1,8 +1,8 @@
 {
-  "gitSyncId": "6811c5e566bdcc075542f090_aa3a1a0b-9063-4a6f-9c0b-0ad1e5b29ec0",
-  "id": "ManualInput_TableData",
+  "gitSyncId": "6811c5e566bdcc075542f090_cac215dc-5321-4047-9241-627739fe8dcf",
+  "id": "ManualInput_TableDataInsertHistory",
   "unpublishedCollection": {
-    "name": "TableData",
+    "name": "TableDataInsertHistory",
     "pageId": "ManualInput",
     "pluginId": "js-plugin",
     "pluginType": "JS",

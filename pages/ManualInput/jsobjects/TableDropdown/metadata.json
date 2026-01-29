@@ -13,7 +13,7 @@
       },
       {
         "name": "INVENTORY",
-        "value": "{\n  FLOOR_NO: {\n    run: async () => await DD_FLOOR.run(),\n    data: DD_FLOOR.data,\n    customName: \"FLOOR(M)\"\n  },\n  ZONE: {\n    run: async () => await DD_ZONE.run(),\n    data: DD_ZONE.data,\n    customName: \"ZONE(M)\"\n  },\n  UOM: {\n    run: async () => await DD_UOM.run(),\n    data: DD_UOM.data,\n    customName: \"UOM(M)\",\n    spliter: true,\n    splittedArrayPosition: 0,\n    splitWith: \"/\"\n  },\n  STATUS: {\n    run: async () => await DD_STATUS.run(),\n    data: DD_STATUS.data,\n    customName: \"STATUS(M)\"\n  },\n  CT: {\n    run: async () => await DD_CT.run(),\n    data: DD_CT.data,\n    customName: \"CT(M)\"\n  }\n}"
+        "value": "{\n  FLOOR_NO: {\n    run: async () => await DD_FLOOR.run(),\n    data: DD_FLOOR.data,\n    customName: \"FLOOR(M)\"\n  },\n  ZONE: {\n    run: async () => await DD_ZONE.run(),\n    data: DD_ZONE.data,\n    customName: \"ZONE(M)\"\n  },\n  UOM: {\n    run: async () => await DD_UOM.run(),\n    data: DD_UOM.data,\n    customName: \"UOM(M)\",\n    spliter: false,\n    splittedArrayPosition: 0,\n    splitWith: \"/\"\n  },\n  STATUS: {\n    run: async () => await DD_STATUS.run(),\n    data: DD_STATUS.data,\n    customName: \"STATUS(M)\"\n  },\n  CT: {\n    run: async () => await DD_CT.run(),\n    data: DD_CT.data,\n    customName: \"CT(M)\"\n  }\n}"
       },
       {
         "name": "PROFILE",

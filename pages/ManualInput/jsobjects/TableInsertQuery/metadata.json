@@ -17,7 +17,7 @@
       },
       {
         "name": "PROFILE",
-        "value": "{\n  run: async params => await _03_INSERT_PROFILE.run(params),\n  data: _03_INSERT_PROFILE.data\n}"
+        "value": "{\n  run: async params => await _04_INSERT_PROFILE.run(params),\n  data: _04_INSERT_PROFILE.data\n}"
       },
       {
         "name": "COMPANY",

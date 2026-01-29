@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6811c5e566bdcc075542f090_c27f5c91-89cd-4025-9c6f-2fb12f3da011",
-  "id": "ManualInput_SEARCH_COMPANY",
+  "gitSyncId": "6811c5e566bdcc075542f090_83b4398c-de85-4892-b213-93b7da93b8a0",
+  "id": "ManualInput_SEARCH_THIRD_PARTY",
   "pluginId": "mssql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM dbo.PMS_COMPANY_LM WHERE COMPANY_NAME_TH = {{this.params.COMPANY_NAME_TH}} AND DELETE_FLAG = 0 AND (IS_THIRD_PARTY = 0 OR IS_THIRD_PARTY IS NULL)",
+      "body": "SELECT * FROM dbo.PMS_COMPANY_LM WHERE COMPANY_NAME_TH = {{this.params.COMPANY_NAME_TH}} AND DELETE_FLAG = 0 AND (IS_THIRD_PARTY = 1)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "SEARCH_COMPANY",
+    "name": "SEARCH_THIRD_PARTY",
     "pageId": "ManualInput",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

@@ -23,9 +23,9 @@ export default {
 		if(sel_editMasterVersion.isDisabled){
 			//new version
 			await Promise.all( items.map(async (item,index)=>{
-					const insertEntity={TYPE_NAME:inp_editMasterTypeName.text,
-															SYSTEM_VALUE:item.value,
-															FIXED_VALUE:item.label,
+					const insertEntity={TYPE_NAME:_.trim(inp_editMasterTypeName.text),
+															SYSTEM_VALUE:_.trim(item.value),
+															FIXED_VALUE:_.trim(item.label),
 															SYSTEM_INDEX:index,
 															VERSION:inp_New_Version_Name.text,
 															ACTIVE:inp_editMasterIsActive.text
@@ -42,9 +42,9 @@ export default {
 			await Promise.all( items.map(async (item,index)=>{
 				if(_.trim( item.MASTER_LIST_ID)==""||item.MASTER_LIST_ID==null){
 					//insert
-					const insertEntity={TYPE_NAME:inp_editMasterTypeName.text,
-															SYSTEM_VALUE:item.value,
-															FIXED_VALUE:item.label,
+					const insertEntity={TYPE_NAME:_.trim(inp_editMasterTypeName.text),
+															SYSTEM_VALUE:_.trim(item.value),
+															FIXED_VALUE:_.trim(item.label),
 															SYSTEM_INDEX:index,
 															VERSION:sel_editMasterVersion.selectedOptionValue,
 															ACTIVE:inp_editMasterIsActive.text
@@ -52,7 +52,7 @@ export default {
 					await SP_INSERT_MASTERLIST.run(insertEntity);
 				}else{
 					//update
-					const updateEntity={SYSTEM_VALUE:item.value,FIXED_VALUE:item.label,SYSTEM_INDEX:index,MASTER_LIST_ID:item.MASTER_LIST_ID};
+					const updateEntity={SYSTEM_VALUE:_.trim(item.value),FIXED_VALUE:_.trim(item.label),SYSTEM_INDEX:index,MASTER_LIST_ID:item.MASTER_LIST_ID};
 					await M0_UPDATE_MASTER.run(updateEntity);
 				}
 			}))

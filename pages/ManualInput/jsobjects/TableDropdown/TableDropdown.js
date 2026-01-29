@@ -2,7 +2,7 @@ export default {
 	getData:async(entity)=>{
 		if(typeof entity != 'object') return;
 		if(entity.data == undefined)
-			await entity.run();
+			return await entity.run();
 		return entity.data;
 	},
 	CATALOG:{
@@ -13,7 +13,7 @@ export default {
 	INVENTORY:{
 		FLOOR_NO: {run:async()=>await DD_FLOOR.run(),data:DD_FLOOR.data,customName:"FLOOR(M)"},
 		ZONE: {run:async()=>await DD_ZONE.run(),data:DD_ZONE.data,customName:"ZONE(M)"},
-		UOM: {run:async()=>await DD_UOM.run(),data:DD_UOM.data,customName:"UOM(M)",spliter:true,splittedArrayPosition:0,splitWith:"/"},
+		UOM: {run:async()=>await DD_UOM.run(),data:DD_UOM.data,customName:"UOM(M)",spliter:false,splittedArrayPosition:0,splitWith:"/"},
 		STATUS: {run:async()=>await DD_STATUS.run(),data:DD_STATUS.data,customName:"STATUS(M)"},
 		CT: {run:async()=>await DD_CT.run(),data:DD_CT.data,customName:"CT(M)"},
 	},

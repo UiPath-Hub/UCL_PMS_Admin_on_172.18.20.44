@@ -1,4 +1,9 @@
 export default {
+	onEditTableData:(currentIndex)=>{
+		console.log(currentIndex)
+		return currentIndex;
+		//TableData.PROFILE[]
+	},
 	on_confirmClick:async ()=>{
 		await SP_HANDLE_TOKEN.run();
 		if(SP_HANDLE_TOKEN.data && SP_HANDLE_TOKEN.data[0].TOTAL_RECORD > 0 && SP_HANDLE_TOKEN.data[0].RESULT_CODE == undefined){
@@ -57,15 +62,15 @@ export default {
 					//await Promise.all( 
 					while(thisTableColumn[n] !== undefined){
 						let columnName = thisTableColumn[n]
-					
+						console.log('columnName ' + columnName);
 						//Object.values(TableColumn[tableName]).forEach(async (columnName)=>{
 						if(Object.keys(CSVRows).includes(columnName)){
 							const data = _.trim(CSVRows[columnName]??"")
 							if(data!=""){
 								//console.log(data);
-								let dropDownValidateCheck = TableDropdown[tableName][columnName];
-								let searchSetCheck = TableSearchSet[tableName][columnName];
-								if(dropDownValidateCheck != undefined){
+								let dropDownValidateCheck = TableDropdown[tableName]!==undefined?TableDropdown[tableName][columnName]:undefined;
+								let searchSetCheck = TableSearchSet[tableName]!==undefined? TableSearchSet[tableName][columnName]:undefined;
+								if(dropDownValidateCheck !== undefined){
 									let dropdownData = await TableDropdown.getData(dropDownValidateCheck);
 									dropdownData = dropdownData.map((f)=>{
 										let i = f.SYSTEM_VALUE;
@@ -78,14 +83,16 @@ export default {
 												i = i[dropDownValidateCheck.splittedArrayPosition]
 											}
 										}
+										
 										return {full:f.SYSTEM_VALUE,specific:i};
 									});
+									console.log(dropdownData);
 									let matching = dropdownData.find(i=>i.specific===data);
 									dataRow[dropDownValidateCheck.customName] = matching!== undefined?matching.full:"Master Not found";
 									dataRow[columnName]=data;
-								}else if(searchSetCheck != undefined){
+								}else if(searchSetCheck !== undefined){
 									let searchData = await TableSearchSet.getData(searchSetCheck,_.trim(data));
-									//console.log('searchData '+JSON.stringify(searchData));
+									console.log('searchData '+JSON.stringify(searchData));
 									if(searchData && searchData.length === 1){
 										dataRow[searchSetCheck.columnDetail] = searchData[0][searchSetCheck.columnDetail]??"column not found";
 										if(searchSetCheck.additionalDetail){
@@ -136,25 +143,31 @@ export default {
 	InsertToSQL:async(tableName)=>{
 		let failueRow = [];
 		let query = TableInsertQuery[tableName];
-		if(query == undefined)return;			
-		failueRow = await Promise.all(TableData[tableName].map(async (row)=>{
+		let tableData = TableData[tableName];
+		let InsertHistory = TableDataInsertHistory[tableName];
+		const pushHistory = (row)=>{if(InsertHistory!==undefined) InsertHistory.push(row);};
+		if(query === undefined || tableData === undefined)return;			
+
+		while(tableData.length >= 1){
+			let row = tableData.pop();
 			if(row){
 				try{
-					await query.run(row);
-					if(query.data[0] && query.data[0].RESULT_CODE === "ERROR"){
+					let data = await query.run(row);
+					console.log(data);
+					if(data[0] && data[0].RESULT_CODE === "ERROR"){
 						row.ERROR = query.data[0].RESULT_MESSAGES;
-						//console.log(row);
-						return row; //return error row
+						failueRow.push(row); 
+					}else{
+						row.ERROR = "-"
+						pushHistory(row);
 					}
 				}catch(error){
-					console.log("error");
-					
+					console.log("catch error");
 					row.ERROR = JSON.stringify(error);
-					return row; //return error row
+					failueRow.push(row); 
 				}
 			}
-			return;
-		}))
+		}
 		console.log(failueRow);
 		failueRow = failueRow.filter(i=>i!=undefined);
 		if(failueRow.length>0){

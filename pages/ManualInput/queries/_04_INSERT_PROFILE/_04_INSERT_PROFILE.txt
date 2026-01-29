@@ -4,7 +4,7 @@ declare @ResultCode nvarchar(10)
 EXECUTE [dbo].[UPDATE_PMS_PROFILE_LM_V3]
    @pCOMPANY_ID = {{this.params.COMPANY_ID }}
   ,@pCOMPANY_PROFILE_AGREEMENT_NO = {{this.params.AGREEMENT_ID}}
-  ,@pFORMULA_ID = {{this.params.FORMULA}}
+  ,@pFORMULA_ID = {{this.params.FORMULA_ID}}
   ,@pINVENTORY_ID = {{this.params.INVENTORY_ID}}
   ,@pPROFILE_FLOOR_MODIFIER = {{this.params.PROFILE_FLOOR_MODIFIER}}
   ,@pPROFILE_PP_UNIT_MODIFIER = {{this.params.PROFILE_PP_UNIT_MODIFIER}}
