@@ -1,6 +1,5 @@
 declare @ResultCode nvarchar(10)
 	,@ResultMessages NVARCHAR(MAX)
-	,@INSERTED_PROFILE_ID NVARCHAR(MAX)
  
 EXECUTE [dbo].[UPDATE_PMS_PROFILE_LM_V3]
    @pCOMPANY_ID = {{this.params.COMPANY_ID }}
@@ -24,6 +23,5 @@ EXECUTE [dbo].[UPDATE_PMS_PROFILE_LM_V3]
   ,@USER_TOKEN = {{AppState.CurrentSession.SessionToken}}
 	,@ResultCode =@ResultCode OUTPUT
 	,@ResultMessages =@ResultMessages OUTPUT
-	,@INSERTED_PROFILE_ID = @INSERTED_PROFILE_ID
 
-SELECT @ResultCode AS RESULT_CODE,@INSERTED_PROFILE_ID as ID , @ResultMessages as RESULT_MESSAGES
+SELECT @ResultCode AS RESULT_CODE, @ResultMessages as RESULT_MESSAGES
