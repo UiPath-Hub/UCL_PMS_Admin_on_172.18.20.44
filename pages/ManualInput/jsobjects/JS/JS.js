@@ -144,8 +144,8 @@ export default {
 		let failueRow = [];
 		let query = TableInsertQuery[tableName];
 		let tableData = TableData[tableName];
-		let InsertHistory = TableDataInsertHistory[tableName];
-		const pushHistory = (row)=>{if(InsertHistory!==undefined) InsertHistory.push(row);};
+
+		const pushHistory = (row)=>{if(TableDataInsertHistory[tableName]!==undefined) TableDataInsertHistory[tableName].push(row);};
 		if(query === undefined || tableData === undefined)return;			
 
 		while(tableData.length >= 1){
