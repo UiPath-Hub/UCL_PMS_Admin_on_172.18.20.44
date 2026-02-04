@@ -18,11 +18,11 @@ EXECUTE [dbo].[UPDATE_PRODUCT_INVENTORY]
 	,@START_DATE={{this.params.START_DATE}}
 	,@END_DATE={{this.params.END_DATE}}
 	,@PERCENTAGE={{this.params.PERCENTAGE}}
-	,@SHARED={{Boolean(this.params.SHARED)}}
+	,@SHARED={{JS.parseBoolean(this.params.SHARED)}}
 	,@ACCOUNTING_DESCRIPTION = {{this.params.ACCOUNTING_DESCRIPTION}}
 	,@SUB_INVENTORY= {{this.params.SUB_INVENTORY||null}}
 	,@UOM = {{this.params.UOM||null}}
-	,@FLOOR_ENABLE = {{Boolean(this.params.FLOOR_ENABLE??0)}}
+	,@FLOOR_ENABLE = {{JS.parseBoolean(this.params.FLOOR_ENABLE??0)}}
 	--,@BASE64 = 
   ,@USER_TOKEN = {{AppState.CurrentSession.SessionToken}}
 	,@IS_INSERT = 1

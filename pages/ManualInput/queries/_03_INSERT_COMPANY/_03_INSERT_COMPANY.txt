@@ -32,7 +32,7 @@ EXECUTE [dbo].[UPDATE_PMS_COMPANY_LM]
   ,@pCOMPANY_PROVINCE_EN = {{this.params.PROVINCE_TH}}
 
   ,@pCOMPANY_POSTAL_CODE = {{this.params.POSTAL_CODE}}
-  ,@USER_TOKEN = {{this.params.USER_TOKEN}}
+  ,@USER_TOKEN = {{AppState.CurrentSession.SessionToken}}
   ,@NEWBRANCH = {{appsmith.user.email}}
   ,@COMPANY_LANGUAGE_TYPE = {{this.params.COMPANY_LANGUAGE_TYPE}}
   ,@TITLE_PREFIX = {{this.params.TITLE_PREFIX}}

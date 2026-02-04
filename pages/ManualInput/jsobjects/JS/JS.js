@@ -1,4 +1,11 @@
 export default {
+	parseBoolean:(value)=>{
+		if (typeof value !== "string") return false;
+
+		return ["true", "1"].includes(
+			value.trim().toLowerCase()
+		);
+	},
 	onEditTableData:(currentIndex)=>{
 		console.log(currentIndex)
 		return currentIndex;
@@ -53,7 +60,7 @@ export default {
 				//let dataTable = [];
 				let r = 0
 				//await Promise.all( 
-					//fileData.data.map(async(CSVRows)=>{
+				//fileData.data.map(async(CSVRows)=>{
 				while(fileData.data[r]!== undefined){
 					let CSVRows = fileData.data[r];
 					let dataRow = {};
@@ -83,7 +90,7 @@ export default {
 												i = i[dropDownValidateCheck.splittedArrayPosition]
 											}
 										}
-										
+
 										return {full:f.SYSTEM_VALUE,specific:i};
 									});
 									console.log(dropdownData);
@@ -120,7 +127,7 @@ export default {
 						}else{
 							//showAlert(columnName+" missing.","alert"); 
 						}
-					//})
+						//})
 						n++;
 					} //while end
 					//) //promise end
@@ -128,8 +135,8 @@ export default {
 						//dataTable.push(dataRow);
 						TableData[tableName].push(dataRow);
 					}
-				//})) //first promise end
-					
+					//})) //first promise end
+
 					r++;
 				} //first while end
 				//console.log(dataTable);
@@ -151,21 +158,24 @@ export default {
 		while(tableData.length >= 1){
 			let row = tableData.pop();
 			if(row){
-				try{
-					let data = await query.run(row);
-					console.log(data);
-					if(data[0] && data[0].RESULT_CODE === "ERROR"){
-						row.ERROR = query.data[0].RESULT_MESSAGES;
-						failueRow.push(row); 
-					}else{
-						row.ERROR = "-"
-						pushHistory(row);
-					}
-				}catch(error){
-					console.log("catch error");
-					row.ERROR = JSON.stringify(error);
+				//try{
+				let data = await query.run(row);
+				console.log(data);
+				if(data[0] && data[0].RESULT_CODE === "ERROR"){
+					row.ERROR = query.data[0].RESULT_MESSAGES;
 					failueRow.push(row); 
+				}else{
+					row.ERROR = "-"
+					pushHistory(row);
 				}
+				/*}catch(error){
+					console.log("catch error");
+					if(typeof error === 'object' && Object.keys(error).length >0){
+						row.ERROR = JSON.stringify(error??"");
+					}
+					row.ERROR = error??"Error";
+					failueRow.push(row); 
+				}*/
 			}
 		}
 		console.log(failueRow);

@@ -39,8 +39,6 @@
     "PRODUCT_TYPE_TH_S_",
     "PRODUCT_CODE_S_",
     "INVENTORY_NAME",
-    "FLOOR_NO",
-    "FLOOR_M_",
     "PRODUCT_DESCRIPTION",
     "PRICE_PER_UNIT",
     "FLOOR_ENABLE",
@@ -52,11 +50,10 @@
     "STATUS",
     "STATUS_M_",
     "SHARED",
-    "ACCOUNTING_DESCRIPTION",
     "ERROR",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1769677550182,
+  "columnUpdatedAt": 1770105762001,
   "columnWidthMap": {
     "ACCOUNT_CODE": 164,
     "AVAILABLE_UNIT": 176,
@@ -69,7 +66,7 @@
     "PRODUCT_DETAIL": 185,
     "PRODUCT_ID": 167,
     "PRODUCT_NAME_EN": 177,
-    "PRODUCT_NAME_TH": 192,
+    "PRODUCT_NAME_TH": 265,
     "PRODUCT_TYPE": 186,
     "PRODUCT_TYPE_EN_S_": 197,
     "START_DATE": 374,
@@ -103,9 +100,6 @@
       "key": "primaryColumns.PRODUCT_NAME_TH.cellBackground"
     },
     {
-      "key": "primaryColumns.FLOOR_NO.computedValue"
-    },
-    {
       "key": "primaryColumns.INVENTORY_NAME.computedValue"
     },
     {
@@ -119,9 +113,6 @@
     },
     {
       "key": "primaryColumns.PRODUCT_ID.computedValue"
-    },
-    {
-      "key": "primaryColumns.FLOOR_M_.computedValue"
     },
     {
       "key": "primaryColumns.PRODUCT_NAME_EN_S_.computedValue"
@@ -167,9 +158,6 @@
     },
     {
       "key": "primaryColumns.SHARED.computedValue"
-    },
-    {
-      "key": "primaryColumns.ACCOUNTING_DESCRIPTION.computedValue"
     },
     {
       "key": "primaryColumns.ERROR.computedValue"
@@ -219,40 +207,6 @@
   "parentRowSpace": 10,
   "primaryColumnId": "PRODUCT_CODE",
   "primaryColumns": {
-    "ACCOUNTING_DESCRIPTION": {
-      "alias": "ACCOUNTING_DESCRIPTION",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = PMS_PRODUCT_INVENTORY_LM.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ACCOUNTING_DESCRIPTION\"])) : ACCOUNTING_DESCRIPTION })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "ACCOUNTING_DESCRIPTION",
-      "index": 19,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "ACCOUNTING_DESCRIPTION",
-      "notation": "standard",
-      "originalId": "ACCOUNTING_DESCRIPTION",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "END_DATE": {
       "alias": "END_DATE",
       "allowCellWrapping": false,
@@ -301,7 +255,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "ERROR",
-      "index": 21,
+      "index": 18,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -309,7 +263,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "ERROR",
       "notation": "standard",
       "originalId": "ERROR",
@@ -349,71 +303,6 @@
       "originalId": "FLOOR_ENABLE",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "FLOOR_M_": {
-      "alias": "FLOOR(M)",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = PMS_PRODUCT_INVENTORY_LM.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FLOOR(M)\"])) : FLOOR(M) })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "FLOOR_M_",
-      "index": 38,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "FLOOR(M)",
-      "notation": "standard",
-      "originalId": "FLOOR(M)",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "FLOOR_NO": {
-      "alias": "FLOOR_NO",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = PMS_PRODUCT_INVENTORY_LM.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"FLOOR_NO\"])) : FLOOR_NO })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "FLOOR_NO",
-      "index": 14,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "FLOOR_NO",
-      "notation": "standard",
-      "originalId": "FLOOR_NO",
-      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
