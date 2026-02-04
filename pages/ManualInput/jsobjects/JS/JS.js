@@ -162,7 +162,7 @@ export default {
 				let data = await query.run(row);
 				console.log(data);
 				if(data[0] && data[0].RESULT_CODE === "ERROR"){
-					row.ERROR = query.data[0].RESULT_MESSAGES;
+					row.ERROR = data[0].RESULT_MESSAGES;
 					failueRow.push(row); 
 				}else{
 					row.ERROR = "-"
