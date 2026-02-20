@@ -22,6 +22,10 @@
       {
         "name": "COMPANY",
         "value": "{\n  COMPANY_TYPE_NAME: {\n    run: async () => await DD_COMPANY_TYPE.run(),\n    data: DD_COMPANY_TYPE.data,\n    customName: \"COMPANY_TYPE(M)\"\n  },\n  STATUS: {\n    run: async () => await DD_STATUS.run(),\n    data: DD_STATUS.data,\n    customName: \"STATUS(M)\"\n  },\n  COMPANY_BUSINESS_TYPE: {\n    run: async () => await DD_COMPANY_BUSINESS_TYPE.run(),\n    data: DD_COMPANY_BUSINESS_TYPE.data,\n    customName: \"COMPANY_BUSINESS_TYPE(M)\"\n  },\n  TITLE_PREFIX: {\n    run: async () => await DD_TITLE_PREFIX.run(),\n    data: DD_TITLE_PREFIX.data,\n    customName: \"TITLE_PREFIX(M)\"\n  },\n  SUFFIX: {\n    run: async () => await DD_SUFFIX.run(),\n    data: DD_SUFFIX.data,\n    customName: \"SUFFIX(M)\"\n  },\n  COMPANY_BRANCH_TYPE: {\n    run: async () => await DD_BRANCH_TYPE.run(),\n    data: DD_BRANCH_TYPE.data,\n    customName: \"BRANCH_TYPE(M)\"\n  },\n  BILLING_COMPANY_TYPE_NAME: {\n    run: async () => await DD_COMPANY_TYPE.run(),\n    data: DD_COMPANY_TYPE.data,\n    customName: \"COMPANY_TYPE(M)\"\n  },\n  BILLING_TITLE_PREFIX: {\n    run: async () => await DD_TITLE_PREFIX.run(),\n    data: DD_TITLE_PREFIX.data,\n    customName: \"TITLE_PREFIX(M)\"\n  },\n  BILLING_SUFFIX: {\n    run: async () => await DD_SUFFIX.run(),\n    data: DD_SUFFIX.data,\n    customName: \"SUFFIX(M)\"\n  },\n  BILLING_BRANCH_TYPE: {\n    run: async () => await DD_BRANCH_TYPE.run(),\n    data: DD_BRANCH_TYPE.data,\n    customName: \"BRANCH_TYPE(M)\"\n  },\n  BILLING_COMPANY_BUSINESS_TYPE: {\n    run: async () => await DD_COMPANY_BUSINESS_TYPE.run(),\n    data: DD_COMPANY_BUSINESS_TYPE.data,\n    customName: \"COMPANY_BUSINESS_TYPE(M)\"\n  }\n}"
+      },
+      {
+        "name": "THIRD_PARTY_PROFILE",
+        "value": "TableDropdown.PROFILE"
       }
     ]
   }

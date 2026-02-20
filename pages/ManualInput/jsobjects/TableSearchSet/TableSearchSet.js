@@ -65,6 +65,16 @@ export default {
 			},
 			data:SEARCH_CONTACT.data,
 			columnDetail:"COMPANY_CONTACT_ID"},
-	}
-
+	},
+	THIRD_PARTY_PROFILE:{
+		FORMULA_ID:this.PROFILE.FORMULA_ID,
+		INVENTORY_NAME:this.PROFILE.INVENTORY_NAME,
+		
+		COMPANY_NAME_TH:{
+			run:async(COMPANY_NAME_TH)=>{
+				return  await SEARCH_THIRD_PARTY.run({COMPANY_NAME_TH:COMPANY_NAME_TH}); 
+			},
+			data:SEARCH_THIRD_PARTY.data,columnDetail:"COMPANY_ID"},
+		
+	},
 }

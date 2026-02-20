@@ -3,4 +3,5 @@ export default {
 	INVENTORY:{run:async(params)=>await _02_INSERT_INVENTORY.run(params),data:_02_INSERT_INVENTORY.data},
 	PROFILE:{run:async(params)=>await _04_INSERT_PROFILE .run(params),data:_04_INSERT_PROFILE.data},
 	COMPANY:{run:async(params)=>await _03_INSERT_COMPANY .run(params),data:_03_INSERT_COMPANY.data},
+	THIRD_PARTY_PROFILE:this.PROFILE
 }

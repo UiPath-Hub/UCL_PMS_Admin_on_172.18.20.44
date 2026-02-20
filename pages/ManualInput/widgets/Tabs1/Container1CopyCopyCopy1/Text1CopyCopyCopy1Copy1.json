@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 61,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,23 +30,23 @@
   "mobileRightColumn": 7,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
+  "originalBottomRow": 61,
+  "originalTopRow": 57,
   "overflow": "NONE",
   "parentColumnSpace": 23.53125,
-  "parentId": "qfqteff7e0",
+  "parentId": "8ccmgcnfba",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "PMS_COMPANY_PROFILE_LM (Company)",
+  "text": "Recent Insert",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 0,
+  "topRow": 57,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "eyw7y605lg",
-  "widgetName": "Text1CopyCopy"
+  "widgetId": "kz89ayw5sm",
+  "widgetName": "Text1CopyCopyCopy1Copy1"
 }

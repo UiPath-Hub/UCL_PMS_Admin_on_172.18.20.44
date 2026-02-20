@@ -34,5 +34,6 @@ export default {
 		BILLING_SUFFIX: {run:async()=>await DD_SUFFIX.run(),data:DD_SUFFIX.data,customName:"SUFFIX(M)"},
 		BILLING_BRANCH_TYPE: {run:async()=>await DD_BRANCH_TYPE.run(),data:DD_BRANCH_TYPE.data,customName:"BRANCH_TYPE(M)"},
 		BILLING_COMPANY_BUSINESS_TYPE: {run:async()=>await DD_COMPANY_BUSINESS_TYPE.run(),data:DD_COMPANY_BUSINESS_TYPE.data,customName:"COMPANY_BUSINESS_TYPE(M)"},
-	}
+	},
+	THIRD_PARTY_PROFILE:this.PROFILE
 }

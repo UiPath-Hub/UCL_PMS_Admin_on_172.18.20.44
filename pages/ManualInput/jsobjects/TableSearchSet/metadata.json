@@ -18,6 +18,10 @@
       {
         "name": "COMPANY",
         "value": "{\n  PRIORITY_CONTACT_ID: {\n    run: async COMPANY_CONTACT_ID => {\n      return await SEARCH_CONTACT.run({\n        COMPANY_CONTACT_ID: COMPANY_CONTACT_ID\n      });\n    },\n    data: SEARCH_CONTACT.data,\n    columnDetail: \"COMPANY_CONTACT_ID\"\n  }\n}"
+      },
+      {
+        "name": "THIRD_PARTY_PROFILE",
+        "value": "{\n  FORMULA_ID: TableSearchSet.PROFILE.FORMULA_ID,\n  INVENTORY_NAME: TableSearchSet.PROFILE.INVENTORY_NAME,\n  COMPANY_NAME_TH: {\n    run: async COMPANY_NAME_TH => {\n      return await SEARCH_THIRD_PARTY.run({\n        COMPANY_NAME_TH: COMPANY_NAME_TH\n      });\n    },\n    data: SEARCH_THIRD_PARTY.data,\n    columnDetail: \"COMPANY_ID\"\n  }\n}"
       }
     ]
   }

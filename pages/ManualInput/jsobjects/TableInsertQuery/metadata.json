@@ -22,6 +22,10 @@
       {
         "name": "COMPANY",
         "value": "{\n  run: async params => await _03_INSERT_COMPANY.run(params),\n  data: _03_INSERT_COMPANY.data\n}"
+      },
+      {
+        "name": "THIRD_PARTY_PROFILE",
+        "value": "TableInsertQuery.PROFILE"
       }
     ]
   }
