@@ -166,6 +166,9 @@ export default {
 					failueRow.push(row); 
 				}else{
 					row.ERROR = "-"
+					if(query.returnIDColumnName){
+						row.ID = data[0][query.returnIDColumnName]
+					}
 					pushHistory(row);
 				}
 				/*}catch(error){

@@ -32,6 +32,7 @@
     }
   },
   "columnOrder": [
+    "ID",
     "COMPANY_NAME_TH",
     "COMPANY_ID",
     "FORMULA_ID",
@@ -43,13 +44,12 @@
     "PRODUCT_TYPE_EN_S_",
     "COMPANY_PROFILE_PERIOD_START",
     "COMPANY_PROFILE_PERIOD_END",
-    "PERIOD_END_FOR_CALCULATE",
-    "PERIOD_START_FOR_CALCULATE",
-    "PROFILE_PAYMENT_DUE_DATE",
     "ERROR",
+    "QUANTITY",
+    "INVOICE_GROUP_ID",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1769582501066,
+  "columnUpdatedAt": 1773137863286,
   "columnWidthMap": {
     "ACCOUNT_CODE": 164,
     "AVAILABLE_UNIT": 176,
@@ -131,19 +131,19 @@
       "key": "primaryColumns.COMPANY_PROFILE_PERIOD_END.computedValue"
     },
     {
-      "key": "primaryColumns.PERIOD_END_FOR_CALCULATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.PERIOD_START_FOR_CALCULATE.computedValue"
-    },
-    {
-      "key": "primaryColumns.PROFILE_PAYMENT_DUE_DATE.computedValue"
-    },
-    {
       "key": "primaryColumns.FORMULA_NAME.computedValue"
     },
     {
       "key": "primaryColumns.ERROR.computedValue"
+    },
+    {
+      "key": "primaryColumns.QUANTITY.computedValue"
+    },
+    {
+      "key": "primaryColumns.INVOICE_GROUP_ID.computedValue"
+    },
+    {
+      "key": "primaryColumns.ID.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -351,7 +351,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "ERROR",
       "notation": "standard",
       "originalId": "ERROR",
@@ -431,6 +431,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "ID": {
+      "alias": "ID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ID\"])) : ID })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "ID",
+      "index": 14,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ID",
+      "notation": "standard",
+      "originalId": "ID",
+      "sticky": "left",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "INVENTORY_ID": {
       "alias": "INVENTORY_ID",
       "allowCellWrapping": false,
@@ -499,21 +533,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "PERIOD_END_FOR_CALCULATE": {
-      "alias": "PERIOD_END_FOR_CALCULATE",
+    "INVOICE_GROUP_ID": {
+      "alias": "INVOICE_GROUP_ID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PERIOD_END_FOR_CALCULATE\"])) : PERIOD_END_FOR_CALCULATE })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"INVOICE_GROUP_ID\"])) : INVOICE_GROUP_ID })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "PERIOD_END_FOR_CALCULATE",
-      "index": 10,
+      "id": "INVOICE_GROUP_ID",
+      "index": 12,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -522,43 +556,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "PERIOD_END_FOR_CALCULATE",
+      "label": "INVOICE_GROUP_ID",
       "notation": "standard",
-      "originalId": "PERIOD_END_FOR_CALCULATE",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "PERIOD_START_FOR_CALCULATE": {
-      "alias": "PERIOD_START_FOR_CALCULATE",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PERIOD_START_FOR_CALCULATE\"])) : PERIOD_START_FOR_CALCULATE })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "PERIOD_START_FOR_CALCULATE",
-      "index": 11,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "PERIOD_START_FOR_CALCULATE",
-      "notation": "standard",
-      "originalId": "PERIOD_START_FOR_CALCULATE",
+      "originalId": "INVOICE_GROUP_ID",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -669,21 +669,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "PROFILE_PAYMENT_DUE_DATE": {
-      "alias": "PROFILE_PAYMENT_DUE_DATE",
+    "QUANTITY": {
+      "alias": "QUANTITY",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PROFILE_PAYMENT_DUE_DATE\"])) : PROFILE_PAYMENT_DUE_DATE })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"QUANTITY\"])) : QUANTITY })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "PROFILE_PAYMENT_DUE_DATE",
-      "index": 12,
+      "id": "QUANTITY",
+      "index": 11,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -692,9 +692,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "PROFILE_PAYMENT_DUE_DATE",
+      "label": "QUANTITY",
       "notation": "standard",
-      "originalId": "PROFILE_PAYMENT_DUE_DATE",
+      "originalId": "QUANTITY",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
