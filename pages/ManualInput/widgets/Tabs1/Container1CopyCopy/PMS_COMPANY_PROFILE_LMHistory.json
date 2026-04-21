@@ -47,9 +47,10 @@
     "ERROR",
     "QUANTITY",
     "INVOICE_GROUP_ID",
+    "ACCOUNTING_DESC_MODIFIER",
     "customColumn1"
   ],
-  "columnUpdatedAt": 1773137863286,
+  "columnUpdatedAt": 1776751964800,
   "columnWidthMap": {
     "ACCOUNT_CODE": 164,
     "AVAILABLE_UNIT": 176,
@@ -144,6 +145,9 @@
     },
     {
       "key": "primaryColumns.ID.computedValue"
+    },
+    {
+      "key": "primaryColumns.ACCOUNTING_DESC_MODIFIER.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -190,6 +194,40 @@
   "parentRowSpace": 10,
   "primaryColumnId": "PRODUCT_CODE",
   "primaryColumns": {
+    "ACCOUNTING_DESC_MODIFIER": {
+      "alias": "ACCOUNTING_DESC_MODIFIER",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "html",
+      "computedValue": "{{(() => { const tableData = PMS_COMPANY_PROFILE_LMHistory.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ACCOUNTING_DESC_MODIFIER\"])) : ACCOUNTING_DESC_MODIFIER })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "ACCOUNTING_DESC_MODIFIER",
+      "index": 13,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ACCOUNTING_DESC_MODIFIER",
+      "notation": "standard",
+      "originalId": "ACCOUNTING_DESC_MODIFIER",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "COMPANY_ID": {
       "alias": "COMPANY_ID",
       "allowCellWrapping": false,

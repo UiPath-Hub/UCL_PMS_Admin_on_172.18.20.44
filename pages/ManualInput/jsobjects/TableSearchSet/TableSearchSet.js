@@ -32,25 +32,25 @@ export default {
 		},
 	},
 	PROFILE:{
-		COMPANY_NAME_TH:{
-			run:async(COMPANY_NAME_TH)=>{
-				return  await SEARCH_COMPANY.run({COMPANY_NAME_TH:COMPANY_NAME_TH}); 
+		COMPANY_ID:{
+			run:async(COMPANY_ID)=>{
+				return  await SEARCH_COMPANY.run({COMPANY_ID:COMPANY_ID}); 
 				//return data;//SEARCH_COMPANY.data
 			},
-			data:SEARCH_COMPANY.data,columnDetail:"COMPANY_ID"},
+			data:SEARCH_COMPANY.data,columnDetail:"COMPANY_NAME_TH"},
 		FORMULA_ID:{
 			run:async(FORMULA_ID)=>{
 				return await SEARCH_FORMULA.run({FORMULA_ID:FORMULA_ID});
 				//return SEARCH_FORMULA.data;
 			},
 			data:SEARCH_FORMULA.data,columnDetail:"FORMULA_NAME"},
-		INVENTORY_NAME:{
-			run:async(INVENTORY_NAME)=>{
-				return await SEARCH_INVENTORY.run({INVENTORY_NAME:INVENTORY_NAME});
+		INVENTORY_ID:{
+			run:async(INVENTORY_ID)=>{
+				return await SEARCH_INVENTORY.run({INVENTORY_ID:INVENTORY_ID});
 				//return SEARCH_INVENTORY.data;
 			},
 			data:SEARCH_INVENTORY.data,
-			columnDetail:"INVENTORY_ID",
+			columnDetail:"INVENTORY_NAME",
 			additionalDetail:[
 				{columnName:"PRODUCT_NAME_TH",AS:"PRODUCT_NAME_TH(S)"},
 				{columnName:"PRODUCT_TYPE_TH",AS:"PRODUCT_TYPE_TH(S)"},

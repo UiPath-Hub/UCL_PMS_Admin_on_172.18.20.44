@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM dbo.PMS_PRODUCT_INVENTORY_LM WHERE INVENTORY_NAME = {{this.params.INVENTORY_NAME}}",
+      "body": "SELECT * FROM dbo.PMS_PRODUCT_INVENTORY_LM WHERE INVENTORY_ID = {{this.params.INVENTORY_ID}} and DELETE_FLAG = 0",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
